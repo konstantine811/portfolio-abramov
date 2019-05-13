@@ -30,9 +30,6 @@ h6 {
 
 .large-title {
   @include font-style("Adobe Arabic", 131px, 400);
-  @include for-tablet-landscape-down {
-    font-size: 30px;
-  }
 }
 
 .title-shadow {
