@@ -32,8 +32,7 @@ import TheNavigation from "@/components/TheNavigation/TheNavigation.vue";
 //vuex
 import { mapState } from "vuex";
 import { setTimeout } from "timers";
-//library
-import anime from "animejs";
+
 export default {
   name: "app",
   components: {
@@ -66,15 +65,7 @@ export default {
       }
     };
   },
-  mounted() {
-    anime({
-      targets: [".app-bgc", "#noiseEffectBgc", "feTurbulence"],
-      baseFrequency: 1.4,
-      easing: "easeInOutSine",
-      duration: 10000,
-      loop: true
-    });
-  },
+
   computed: {
     ...mapState(["popup"])
   },
@@ -120,6 +111,7 @@ export default {
 
 <style lang="scss">
 @import "./assets/styles/common/variables";
+@import "./assets/styles/mixins/responsive";
 #app {
   width: 100%;
   min-height: 100vh;
@@ -140,6 +132,7 @@ export default {
 .rect-bgc {
   width: 100%;
   height: 100%;
+  animation: scale-bgc 1s ease-in infinite forwards;
 }
 
 .app-logo-wrap {
@@ -154,6 +147,10 @@ export default {
   margin-right: 46px;
   z-index: 1000;
   height: 100%;
+  @include for-phone-only {
+    margin-top: 17px;
+    margin-right: 17px;
+  }
 }
 
 .app__nav {

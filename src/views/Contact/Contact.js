@@ -31,7 +31,7 @@ export default {
         return;
       }
       axios
-        .post("http://localhost:8080/api/send", {
+        .post("https://portfolio-abramov.herokuapp.com/api/send", {
           name: this.form.name,
           email: this.form.email,
           message: this.form.message

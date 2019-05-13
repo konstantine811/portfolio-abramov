@@ -6,6 +6,6 @@
 
 .txt-title__mobile-space {
   @include for-phone-only {
-    padding: 15px 0;
+    padding: 5px 0;
   }
 }

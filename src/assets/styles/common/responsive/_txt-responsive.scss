@@ -8,10 +8,22 @@
   @include for-tablet-landscape-down {
     font-size: 55px;
   }
+  @include for-phone-only {
+    font-size: 33px;
+  }
 }
 
 .small-txt {
   @include for-tablet-landscape-down {
     font-size: 30px;
+  }
+  @include for-phone-only {
+    font-size: 18px;
+  }
+}
+
+.sub-title {
+  @include for-phone-only {
+    font-size: 28px;
   }
 }
