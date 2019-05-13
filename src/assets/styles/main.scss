@@ -1,0 +1,39 @@
+@import "./common/variables";
+
+//mixins
+@import "./mixins/txt-mixin";
+@import "./mixins/responsive";
+
+//common
+@import "./common/txt";
+@import "./common/grid-system";
+@import "./common/animation";
+@import "./common/buttons";
+@import "./common/boxes";
+@import "./common/space-wrappers";
+@import "./common/common";
+@import "./common/popup";
+@import "./common/transitions";
+
+//svg styles
+@import "./svg/skills-svg";
+
+//responsive
+@import "./common/responsive/common-responsive";
+@import "./common/responsive/txt-responsive";
+@import "./common/responsive/popup-responsive";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+svg {
+  width: inherit;
+  height: inherit;
+}

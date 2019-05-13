@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 781.44 653.32">
+    <title>
+        Skills-izometric
+    </title>
+    <defs>
+        <filter id="drop-shadow" width="300%" height="300%" x="-100%" y="-100%">
+            <feOffset dx="10" dy="5" in="SourceAlpha" result="offOut"/>
+            <feGaussianBlur in="offOut" result="blurOut" stdDeviation="20"/>
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal"/>
+        </filter>
+    </defs>
+    <g id="Layer_2" class="skills-izometric-wrap" data-name="Layer 2">
+        <g id="Layer_1-2" data-name="Layer 1">
+            <g id="Html_Rectangle" class="html-rect" data-name="Html Rectangle" filter="url(#drop-shadow)">
+                <polygon points="400.1 638.32 0 407.32 298.63 234.91 698.74 465.91 400.1 638.32" class="html-rect-top"/>
+                <polygon points="400.1 638.32 400.1 653.32 698.74 480.91 698.74 465.91 400.1 638.32" class="html-rect-bottom"/>
+                <polygon points="0 407.32 0 422.32 400.1 653.32 400.1 638.32 0 407.32" class="html-rect-side"/>
+                <text class="text-blue-light text-svg-font text-small" transform="matrix(0.86, -0.5, 0.87, 0.5, 227.49, 514.85)">
+                    <tspan x="50">&lt;<tspan class="text-red-light">html</tspan>&gt;</tspan><tspan x="70" y="30" class="text-silver-light">Pug, SVG, Bootstrap and other...</tspan><tspan x="50" y="60">&lt;/<tspan class="text-red-light">html</tspan>&gt;</tspan>
+                </text>
+                <text class="text-large text-svg-font text-blue-light" transform="matrix(0.86, -0.5, 0.87, 0.5, 280.68, 445.48)">
+                    &lt;<tspan class="text-red-light">HTML</tspan>&gt;
+                </text>
+            </g>
+            <g id="AboutHtml">
+                <g class="text-about-wrap" transform="translate(17.24 104.65)">
+                    <text class="text-about">
+                        About HTML skills
+                    </text>
+                </g>
+                <g id="Line">
+                    <line x1="22.37" x2="22.37" y1="407.32" y2="110.15" class="about-line-html"/>
+                    <circle cx="22.37" cy="109.9" r="3.25" class="about-circle-html"/>
+                </g>
+            </g>
+            <g id="CSS_Rectangle" class="css-rect" data-name="CSS Rectangle" filter="url(#drop-shadow)">
+                <polygon points="400.1 591.32 0 360.32 298.63 187.91 698.74 418.91 400.1 591.32" class="css-rect-top"/>
+                <polygon points="400.1 591.32 400.1 606.32 698.74 433.91 698.74 418.91 400.1 591.32" class="css-rect-bottom"/>
+                <polygon points="0 360.32 0 375.32 400.1 606.32 400.1 591.32 0 360.32" class="css-rect-side"/>
+                <text class="text-blue-light text-svg-font text-small" transform="matrix(0.86, -0.5, 0.87, 0.5, 196.49, 431.85)">
+                    <tspan x="108" y="0">{</tspan><tspan x="118" y="20.4" class="text-red-light" xml:space="preserve">scss;</tspan><tspan x="118" y="40.8" class="text-red-light" xml:space="preserve">animation;</tspan><tspan x="118" y="61.2" class="text-red-light" xml:space="preserve">motion-design;</tspan><tspan x="118" y="81.6" class="text-red-light">responsive;</tspan><tspan x="108" y="102" xml:space="preserve">}</tspan>
+                </text>
+                <text class="text-css" transform="matrix(0.86, -0.5, 0.87, 0.5, 284.83, 357.48)">
+                    css
+                </text>
+            </g>
+            <g id="AboutCSS">
+                <g class="text-about-wrap" transform="translate(669.53 116.23)">
+                    <text class="text-about">
+                        About CSS skills
+                    </text>
+                </g>
+                <g id="Line-2" data-name="Line">
+                    <line x1="674.66" x2="674.66" y1="418.91" y2="121.73" class="about-line-css"/>
+                    <circle cx="674.66" cy="121.48" r="3.25" class="about-circle-css"/>
+                </g>
+            </g>
+            <g id="JS_Rectangle" class="js-rect" data-name="JS Rectangle" filter="url(#drop-shadow)">
+                <polygon points="400.1 539.32 0 308.32 298.63 135.91 698.74 366.91 400.1 539.32" class="js-rect-top"/>
+                <polygon points="400.1 539.32 400.1 554.32 698.74 381.91 698.74 366.91 400.1 539.32" class="js-rect-bottom"/>
+                <polygon points="0 308.32 0 323.32 400.1 554.32 400.1 539.32 0 308.32" class="js-rect-side"/>
+                <text class="text-blue-light text-svg-font" transform="matrix(0.86, -0.5, 0.87, 0.5, 196.49, 394.85)">
+                    <tspan x="72" y="0" class="text-blue">function </tspan> <tspan x="135.58" y="0">( )</tspan> <tspan x="154.58" y="0">{</tspan><tspan x="93.62" y="20.4">return</tspan> <tspan x="145.62" y="20.4">{</tspan><tspan class="text-green"><tspan x="110" y="40.8" xml:space="preserve">ES5, ....ES6,</tspan><tspan x="110" y="61.2" xml:space="preserve">Jquery,</tspan><tspan x="110" y="81.6">Vue.js,</tspan><tspan x="110" y="102">Angular.js,</tspan><tspan x="110" y="122.4" xml:space="preserve"> Node.js</tspan></tspan><tspan x="94" y="142.8" xml:space="preserve">}</tspan><tspan x="64" y="163.2" xml:space="preserve"> }</tspan>
+                </text>
+                <text class="text-js" transform="matrix(0.86, -0.5, 0.87, 0.5, 223.83, 346.48)">
+                    Javascript
+                </text>
+            </g>
+            <g id="AboutJavaScript">
+                <g class="text-about-wrap" transform="translate(293.14 14.23)">
+                    <text class="text-about">
+                        About JavaScript skills
+                    </text>
+                </g>
+                <g id="Line-3" data-name="Line">
+                    <line x1="298.26" x2="298.26" y1="234.91" y2="18.77" class="about-line-js"/>
+                    <circle cx="298.26" cy="18.59" r="3.25" class="about-circle-js"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

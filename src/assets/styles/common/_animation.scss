@@ -1,0 +1,166 @@
+@keyframes down-up-anim {
+  0% {
+    transform: translate(0, 100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes up-anim {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, -100%);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translate(0, 100%);
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes slide-box-fade {
+  0% {
+    transform: translateY(33%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes layer-anim {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-35px);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes layer-self-anim {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-55px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale-blur {
+  0% {
+    filter: blur(15px);
+    transform: scale(0.9, 1.2);
+  }
+  100% {
+    filter: blur(0);
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes scale-blur-reverse {
+  0% {
+    filter: blur(0);
+    transform: scale(1, 1);
+  }
+  100% {
+    filter: blur(3px);
+    transform: scale(1, 1.15);
+  }
+}
+
+@keyframes motion-scale-blur {
+  0% {
+    filter: blur(3px);
+    transform: scale(0.9, 1.2) translateY(33%);
+  }
+  100% {
+    filter: blur(0);
+    transform: scale(1, 1) translateY(0);
+  }
+}
+
+@keyframes motion-from-up-scale-blur {
+  0% {
+    filter: blur(3px);
+    transform: scale(0.9, 1.2) translateY(-33%);
+  }
+  100% {
+    filter: blur(0);
+    transform: scale(1, 1) translateY(0);
+  }
+}
+
+@keyframes motion-to-down-scale-blur {
+  0% {
+    filter: blur(0);
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    filter: blur(3px);
+    transform: scale(0.97, 1.04) translateY(13%);
+  }
+}
+
+@keyframes motion-to-up-scale-blur {
+  0% {
+    filter: blur(0);
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    filter: blur(3px);
+    transform: scale(0.97, 1.04) translateY(-13%);
+  }
+}
+
+@keyframes motion-to-up-more-scale-blur {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(0.97, 1.04) translateY(-383%);
+  }
+}
+
+@keyframes rotate-y-anim {
+  0% {
+    transform: rotateY(90deg);
+  }
+  100% {
+    transform: rotateY(0);
+  }
+}

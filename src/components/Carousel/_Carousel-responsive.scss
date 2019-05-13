@@ -1,0 +1,23 @@
+.carousel-controls__button {
+  @include for-tablet-landscape-down {
+    font-size: 32px;
+  }
+}
+
+.slider {
+  @include for-tablet-landscape-down {
+    min-width: 100%;
+  }
+}
+
+.slider.slide-1 .carousel-title {
+  @include for-tablet-landscape-down {
+    opacity: 0;
+  }
+}
+
+.slider.slide-0 .carousel-title {
+  @include for-tablet-landscape-down {
+    opacity: 1;
+  }
+}

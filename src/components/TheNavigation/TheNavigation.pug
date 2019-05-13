@@ -1,0 +1,15 @@
+-
+  var values = [
+    {anchor: 'home', title: 'Home' },
+    {anchor: 'work', title: 'Work'},
+    {anchor: 'about', title: 'About'},
+    {anchor: 'contact', title: 'Contact'}
+  ]
+
+.navigation-wrap
+  .navigation__inner
+    nav.navigation
+      #menu
+        each val in values
+          .txt-anim-up__wrap-nav
+            a(href=`#${val.anchor}` data-menuanchor=val.anchor).navigation-link.txt-anim-up= val.title

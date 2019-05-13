@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-153 52 1052.44 633.32">
+    <title>
+        Skills-izometric
+    </title>
+    <defs>
+        <filter id="drop-shadow" width="300%" height="300%" x="-100%" y="-100%">
+            <feOffset dx="10" dy="5" in="SourceAlpha" result="offOut"/>
+            <feGaussianBlur in="offOut" result="blurOut" stdDeviation="20"/>
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal"/>
+        </filter>
+    </defs>
+    <g id="Layer_2" class="skills-izometric-wrap" data-name="Layer 2">
+        <g id="Layer_1-2" data-name="Layer 1">
+            <g id="CSS_Rectangle" class="css-rect-self" data-name="CSS Rectangle" filter="url(#drop-shadow)">
+                <polygon points="400.1 591.32 0 360.32 298.63 187.91 698.74 418.91 400.1 591.32" class="css-rect-top"/>
+                <polygon points="400.1 591.32 400.1 606.32 698.74 433.91 698.74 418.91 400.1 591.32" class="css-rect-bottom"/>
+                <polygon points="0 360.32 0 375.32 400.1 606.32 400.1 591.32 0 360.32" class="css-rect-side"/>
+                <text class="text-blue-light text-svg-font text-small" transform="matrix(0.86, -0.5, 0.87, 0.5, 196.49, 431.85)">
+                    <tspan x="108" y="0">{</tspan><tspan x="118" y="20.4" class="text-red-light" xml:space="preserve">scss;</tspan><tspan x="118" y="40.8" class="text-red-light" xml:space="preserve">animation;</tspan><tspan x="118" y="61.2" class="text-red-light" xml:space="preserve">motion-design;</tspan><tspan x="118" y="81.6" class="text-red-light">responsive;</tspan><tspan x="108" y="102" xml:space="preserve">}</tspan>
+                </text>
+                <text class="text-css" transform="matrix(0.86, -0.5, 0.87, 0.5, 284.83, 357.48)">
+                    css
+                </text>
+            </g>
+            <g id="AboutCSS">
+                <g class="text-about-wrap" transform="translate(669.53 116.23)">
+                    <text class="text-about">
+                        About CSS skills
+                    </text>
+                </g>
+                <g id="Line-2" data-name="Line">
+                    <line x1="674.66" x2="674.66" y1="418.91" y2="121.73" class="about-line-css"/>
+                    <circle cx="674.66" cy="121.48" r="3.25" class="about-circle-css"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

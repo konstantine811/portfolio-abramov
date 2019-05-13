@@ -1,0 +1,23 @@
+@import "../../assets/styles/common/variables";
+@import "../../assets/styles/mixins/responsive";
+
+.home {
+  height: 100%;
+}
+
+.home-title-container {
+  height: 100%;
+  min-height: 100vh;
+  max-width: 1201px;
+  margin: 0 auto;
+}
+
+.sub-title__home {
+  margin-right: 10px;
+}
+
+.txt-name-align {
+  text-align: right;
+}
+
+@import "./Home-responsive";

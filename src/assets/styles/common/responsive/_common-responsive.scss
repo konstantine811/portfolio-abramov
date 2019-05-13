@@ -1,0 +1,11 @@
+@media (max-width: $md-device) {
+  .only-device {
+    display: none;
+  }
+}
+
+@media (min-width: $md-device + 1) {
+  .only-tablet {
+    display: none;
+  }
+}

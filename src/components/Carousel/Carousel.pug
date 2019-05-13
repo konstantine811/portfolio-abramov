@@ -1,0 +1,16 @@
+.carousel-view
+  transition-group.carousel(tag="div" v-touch:swipe="touchHandler")
+    .slider(v-for="(slide, index) in slides" :class="['slide-' + index]" :key="slide.id"  @click="slideTransition(index)")
+      .carousel-title-wrap.carousel-title-wrap__space.transform-anim(:style="{'max-width': infoBoxWidth + 'px'}")
+        p.carousel-title {{ slide.title }}
+      .carousel-img-wrap.transform-anim(ref="infoBox")
+        .carousel-img-wrap-blur
+          img(:src="slide.image").carousel-img
+        .carousel-img-content-hover
+          p.carousel-img-content-hover-title {{slide.description}}
+          .link-wrap(:class="{'alone-link': !slide.frameMovie}")
+            button(@click="showFramePopup(slide.frameMovie)" v-if="slide.frameMovie").carousel-img-content-hover-button Show movie presenation
+            a(:href="slide.url" target="_blank").carousel-img-content-hover-link link to site
+  .carousel-controls.d-flex.justify-content-space-between(:style="{width: infoBoxWidth + 'px'}")
+    button.button-reset.button-text.carousel-button.carousel-controls--prev(@click="previous") prev
+    button.button-reset.button-text.carousel-button.carousel-controls--next(@click="next") next

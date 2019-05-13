@@ -1,0 +1,134 @@
+.about-page
+  .about-page-container
+    .about-page-bgc__wrap
+      include ../../assets/img/svg/triangle-and-circles.svg
+    .about-page-slideshow-container
+      .box-silver.d-flex.flex-column.justify-content-space-between
+        transition(name="slide-show")
+          .about-slide-first.slide-img-container.d-flex.flex-column.justify-content-space-between(v-if="slide === 1")
+            .about-slideshow-image.about-slideshow-image__wrap
+              include ../../assets/img/svg/svg-mask-slide-first.svg
+            .about-slide-text-wrap
+              p.txt-large.txt-show-anim Hi, I'm Konstantin Abramov. I am a Frontend developer and at the moment my experience is 2+ years. With great desire, ambition, dedication, sense of style and creativity, I approach every project.
+        transition(name="slide-show")
+          .about-slide-second.slide-img-container.d-flex.flex-column.justify-content-space-between(v-if="slide === 2")
+            .about-slideshow-skills-wrap
+              include ../../assets/img/svg/skills-izometric.svg
+            .about-slide-text-wrap
+              p.txt-large.txt-show-anim My main skills are HTML (Pug, BEM, Bootstrap), CSS (SCSS, Animation) and JavaScirpt (Jquery, Vue.js, Node.js).
+        transition(name="slide-show")
+          .about-slide-second.slide-img-container.d-flex.flex-column.justify-content-space-between(v-if="slide === 3")
+            .about-slideshow-skills-wrap
+              include ../../assets/img/svg/html-skill.svg
+            .about-slide-text-wrap
+              p.txt-large.txt-show-anim.txt-center
+                | For the markup, when writing html code, I use
+                | the methodology of
+                span.txt-red-light.txt-bold  BEM
+                | - this allows me to make the html-code
+                | more extensible and create reusable interface components.
+                | Also, to extend the standard features of html,
+                | I actively use the
+                span.txt-red-light.txt-bold.txt-uppercase  pug
+                |  pre-processor and the code eventually looks more concise.
+                | Using the ready-made components and frame of the
+                span.txt-red-light.txt-bold  Bootstrap
+                |  framework allows me to make development even faster and adaptive.
+        transition(name="slide-show")
+          .about-slide-second.slide-img-container.d-flex.flex-column.justify-content-space-between(v-if="slide === 4")
+            .about-slideshow-skills-wrap
+              include ../../assets/img/svg/css-skill.svg
+            #scroll-area.scroll-area.over-hidden
+              smooth-scrollbar
+                .about-slide-text-wrap
+                  p.txt-large.txt-show-anim.txt-center
+                    | I love style and beauty, so writing
+                    span.txt-red-light.txt-bold  CSS
+                    |  for me is always fascinating, and animating a
+                    | static object gives me even more pleasure, so I
+                    | get to know and develop skills in creating animations
+                    | with pleasure. To extend CSS, I use the
+                    span.txt-red-light.txt-bold  SCSS preprocessor.
+                    |  Deepening knowledge and empowering with CSS allows me
+                    | to recreate almost any fantasy, and for a practical polygon
+                    | to create a design using tools such as
+                    span.txt-red-light.txt-bold  Adobe XD
+                    | ,
+                    span.txt-red-light.txt-bold  Illustrator
+                    | ,
+                    span.txt-red-light.txt-bold  Photshop
+                    | , then I can connect to
+                    span.txt-red-light.txt-bold  Adobe After Effects
+                    | , which allows me to predict and more clearly recreate
+                    | the motion animation. And at the moment
+                    | I work with
+                    span.txt-red-light.txt-bold  SVG
+                    |  graphics.
+        transition(name="slide-show")
+          .about-slide-second.slide-img-container.d-flex.flex-column.justify-content-space-between(v-if="slide === 5")
+            .about-slideshow-skills-wrap
+              include ../../assets/img/svg/js-skill.svg
+            #scroll-area.scroll-area.over-hidden
+              smooth-scrollbar
+                .about-slide-text-wrap
+                  p.txt-large.txt-show-anim.txt-center With
+                    span.txt-red-light.txt-bold  JavaScript
+                    | , we do not part with the first days of
+                    | my entry into web development. From the very beginning,
+                    | I was fascinated by how I could manipulate and modify the
+                    | DOM tree with it, create a paralax effect, sliders,
+                    | and the like, where CSS itself was already powerless.
+                    | Then I made my life easier using
+                    span.txt-red-light.txt-bold  Jquery
+                    | , and studying asynchronous programming
+                    | allowed me to better understand and start using
+                    span.txt-red-light.txt-bold  Ajax
+                    |  technology. But since requests to the DOM tree
+                    | are too resource-intensive and already to create
+                    | more complex and functional sites, such as
+                    span.txt-red-light.txt-bold  SPA
+                    |  applications, this is not enough, I gradually
+                    | became more experienced in using the
+                    span.txt-red-light.txt-bold  Angular.js
+                    |  framework and partially affected
+                    span.txt-red-light.txt-bold  Angular 2+
+                    | . And when I met
+                    span.txt-red-light.txt-bold  Vue.js
+                    | , I realized that this is what I need and
+                    | have been studying and working with
+                    span.txt-red-light.txt-bold  Vue.js
+                    |  for about a year now and used in practice working with
+                    span.txt-red-light.txt-bold  axios
+                    | ,
+                    span.txt-red-light.txt-bold  vuex
+                    | ,
+                    span.txt-red-light.txt-bold  vuetify
+                    | ,
+                    span.txt-red-light.txt-bold  vuelidate
+                    | ,
+                    span.txt-red-light.txt-bold  i18n
+                    | . Also, in addition to this, I own build experience
+                    | from a project from scratch on
+                    span.txt-red-light.txt-bold  Gulp.js
+                    |  and on
+                    span.txt-red-light.txt-bold  Webpack
+                    | . And in order that it doesn’t bother me much, I also
+                    | sometimes, well, quite sometimes, I study and practice with
+                    span.txt-red-light.txt-bold  Node.js
+                    | , developing
+                    span.txt-red-light.txt-bold  MEAN
+                    |  and
+                    span.txt-red-light.txt-bold  MEVN
+                    |  applications, a bit of practice with
+                    span.txt-red-light.txt-bold  Firebase
+                    |  applications. I also work directly with
+                    span.txt-red-light.txt-bold  Git
+                    |  and
+                    span.txt-red-light.txt-bold  Heroku.
+        .about-slide-controls-wrap.d-flex.justify-content-space-between
+          .button-wrap
+            transition(name="fade-in")
+              button.button-reset.button-text(@click="prev" v-if="slide >= 2") prev
+          .button-wrap
+            transition(name="fade-in")
+              button.button-reset.button-text(@click="next" v-if="slide <= 4") next

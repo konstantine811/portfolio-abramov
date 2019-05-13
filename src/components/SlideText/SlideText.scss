@@ -1,0 +1,41 @@
+@import '../../assets/styles/common/variables';
+
+.slide-show-wrap {
+  height: 100%;
+  width: 100%;
+}
+
+.slider-wrap {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+
+.fade-in-slide-enter-active {
+  transition-duration: 5.5s;
+}
+
+.fade-in-slide-leave-active {
+  position: absolute;
+  transition-duration: 4.4s;
+  .slider-content-box {
+    animation: scale-anim 4.4s ease forwards 1;
+  }
+}
+
+.fade-in-slide-enter {
+   transition-duration: 15.5s;
+}
+
+
+@keyframes scale-anim {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@import './SlideText-transition-page';

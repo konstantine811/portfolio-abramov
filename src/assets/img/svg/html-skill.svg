@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-153 52 1052.44 633.32">
+    <title>
+        Skill-html
+    </title>
+    <defs>
+        <filter id="drop-shadow" width="300%" height="300%" x="-100%" y="-100%">
+            <feOffset dx="10" dy="5" in="SourceAlpha" result="offOut"/>
+            <feGaussianBlur in="offOut" result="blurOut" stdDeviation="20"/>
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal"/>
+        </filter>
+    </defs>
+    <g id="Layer_2" class="skills-izometric-wrap" data-name="Layer 2">
+        <g id="Layer_1-2" data-name="Layer 1">
+            <g id="Html_Rectangle" class="html-rect-self" data-name="Html Rectangle" filter="url(#drop-shadow)">
+                <polygon points="400.1 638.32 0 407.32 298.63 234.91 698.74 465.91 400.1 638.32" class="html-rect-top"/>
+                <polygon points="400.1 638.32 400.1 653.32 698.74 480.91 698.74 465.91 400.1 638.32" class="html-rect-bottom"/>
+                <polygon points="0 407.32 0 422.32 400.1 653.32 400.1 638.32 0 407.32" class="html-rect-side"/>
+                <text class="text-blue-light text-svg-font text-small" transform="matrix(0.86, -0.5, 0.87, 0.5, 227.49, 514.85)">
+                    <tspan x="50">&lt;<tspan class="text-red-light">html</tspan>&gt;</tspan><tspan x="70" y="30" class="text-silver-light">Pug, SVG, Bootstrap and other...</tspan><tspan x="50" y="60">&lt;/<tspan class="text-red-light">html</tspan>&gt;</tspan>
+                </text>
+                <text class="text-large text-svg-font text-blue-light" transform="matrix(0.86, -0.5, 0.87, 0.5, 280.68, 445.48)">
+                    &lt;<tspan class="text-red-light">HTML</tspan>&gt;
+                </text>
+            </g>
+            <g id="AboutHtml">
+                <g class="text-about-wrap" transform="translate(17.24 104.65)">
+                    <text class="text-about">
+                        About HTML skills
+                    </text>
+                </g>
+                <g id="Line">
+                    <line x1="22.37" x2="22.37" y1="407.32" y2="110.15" class="about-line-html"/>
+                    <circle cx="22.37" cy="109.9" r="3.25" class="about-circle-html"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-153 52 1052.44 633.32">
+    <title>
+        Skills-izometric
+    </title>
+    <defs>
+        <filter id="drop-shadow" width="300%" height="300%" x="-100%" y="-100%">
+            <feOffset dx="10" dy="5" in="SourceAlpha" result="offOut"/>
+            <feGaussianBlur in="offOut" result="blurOut" stdDeviation="20"/>
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal"/>
+        </filter>
+    </defs>
+    <g id="Layer_2" class="skills-izometric-wrap" data-name="Layer 2">
+        <g id="Layer_1-2" data-name="Layer 1">
+            <g id="JS_Rectangle" class="js-rect-self" data-name="JS Rectangle" filter="url(#drop-shadow)">
+                <polygon points="400.1 539.32 0 308.32 298.63 135.91 698.74 366.91 400.1 539.32" class="js-rect-top"/>
+                <polygon points="400.1 539.32 400.1 554.32 698.74 381.91 698.74 366.91 400.1 539.32" class="js-rect-bottom"/>
+                <polygon points="0 308.32 0 323.32 400.1 554.32 400.1 539.32 0 308.32" class="js-rect-side"/>
+                <text class="text-blue-light text-svg-font" transform="matrix(0.86, -0.5, 0.87, 0.5, 196.49, 394.85)">
+                    <tspan x="72" y="0" class="text-blue">function </tspan> <tspan x="135.58" y="0">( )</tspan> <tspan x="154.58" y="0">{</tspan><tspan x="93.62" y="20.4">return</tspan> <tspan x="145.62" y="20.4">{</tspan><tspan class="text-green"><tspan x="110" y="40.8" xml:space="preserve">ES5, ....ES6,</tspan><tspan x="110" y="61.2" xml:space="preserve">Jquery,</tspan><tspan x="110" y="81.6">Vue.js,</tspan><tspan x="110" y="102">Angular.js,</tspan><tspan x="110" y="122.4" xml:space="preserve"> Node.js</tspan></tspan><tspan x="94" y="142.8" xml:space="preserve">}</tspan><tspan x="64" y="163.2" xml:space="preserve"> }</tspan>
+                </text>
+                <text class="text-js" transform="matrix(0.86, -0.5, 0.87, 0.5, 223.83, 346.48)">
+                    Javascript
+                </text>
+            </g>
+            <g id="AboutJavaScript">
+                <g class="text-about-wrap" transform="translate(293.14 14.23)">
+                    <text class="text-about">
+                        About JavaScript skills
+                    </text>
+                </g>
+                <g id="Line-3" data-name="Line">
+                    <line x1="298.26" x2="298.26" y1="234.91" y2="18.77" class="about-line-js"/>
+                    <circle cx="298.26" cy="18.59" r="3.25" class="about-circle-js"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

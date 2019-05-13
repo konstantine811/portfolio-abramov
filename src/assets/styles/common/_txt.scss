@@ -1,0 +1,154 @@
+@include font-face("Courier New", "CourierNew/cour", 400);
+//Adobe Arabic
+@include font-face("Adobe Arabic", "AdobeArabic/AdobeArabic-Regular", 400);
+@include font-face("Adobe Arabic", "AdobeArabic/AdobeArabic-Italic", 400, italic);
+@include font-face("Adobe Arabic", "AdobeArabic/AdobeArabic-Bold", 600);
+@include font-face("Adobe Arabic", "AdobeArabic/AdobeArabic-BoldItalic", 600, italic);
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.txt-right {
+  text-align: right;
+}
+
+.txt-uppercase {
+  text-transform: uppercase;
+}
+
+.large-title {
+  @include font-style("Adobe Arabic", 131px, 400);
+  @include for-tablet-landscape-down {
+    font-size: 30px;
+  }
+}
+
+.title-shadow {
+  text-shadow: 5px 8px 8px rgba($black, 0.5);
+}
+
+.sub-title {
+  @include font-style("Adobe Arabic", 49px, 400, italic);
+  color: $black-light;
+}
+
+.txt-large {
+  @include font-style("Adobe Arabic", 30px, 400, italic);
+  color: $black-light;
+}
+
+.small-txt {
+  font-size: 44px;
+}
+
+.txt-normal {
+  font-style: normal;
+}
+
+//color txt
+.txt--white {
+  color: $white;
+}
+
+.txt-red-light {
+  color: $red-light;
+}
+
+.txt-blue-light {
+  color: $blue-light;
+}
+
+.txt-bold {
+  font-weight: 600;
+}
+
+h2.txt-second,
+.txt-second {
+  @include font-style("Adobe Arabic", 36px, 600);
+  color: $black-light;
+}
+
+.error-txt {
+  @include font-style("Adobe Arabic", 26px, 400, italic);
+  color: $red-light;
+  transition: transform 0.5s ease-in;
+}
+
+.success-txt {
+  @include font-style("Adobe Arabic", 26px, 400, italic);
+  color: $green-2;
+  transition: transform 0.5s ease-in;
+}
+
+//animation
+.txt-anim-up__wrap,
+.txt-anim-up__wrap-nav,
+.txt-anim-up__wrap-logo {
+  height: auto;
+  overflow: hidden;
+}
+
+.txt-anim-up {
+  transform: translate(0, 100%);
+  animation-name: down-up-anim;
+  animation-duration: 4.3s;
+  animation-timing-function: $first-anim-timing;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@for $i from 1 through 3 {
+  .txt-anim-up__wrap:nth-child(#{$i}) {
+    .txt-anim-up {
+      animation-delay: 0.3s * $i;
+    }
+  }
+}
+
+@for $i from 1 through 4 {
+  .txt-anim-up__wrap-nav:nth-child(#{$i}) {
+    .txt-anim-up {
+      animation-delay: 0.5s * $i;
+    }
+  }
+}
+
+@for $i from 1 through 2 {
+  .txt-anim-up__wrap-logo:nth-child(#{$i}) {
+    .txt-anim-up {
+      animation-delay: 0.2s * $i;
+    }
+  }
+}
+
+.home-down {
+  .txt-anim-up__wrap {
+    .txt-anim-up {
+      transform: translate(0, 0);
+      animation-name: up-anim;
+      animation-duration: 1s;
+      animation-timing-function: ease;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+  }
+  @for $i from 1 through 3 {
+    .txt-anim-up__wrap:nth-child(#{$i}) {
+      .txt-anim-up {
+        animation-delay: 0.2s * $i / 2;
+      }
+    }
+  }
+}

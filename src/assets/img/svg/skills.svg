@@ -1,0 +1,72 @@
+<svg viewBox="0 0 757.6 719.93">
+    <defs>
+        <filter id="drop-shadow" width="300%" height="300%" x="-100%" y="-100%">
+            <feOffset dx="10" dy="5" in="SourceAlpha" result="offOut"/>
+            <feGaussianBlur in="offOut" result="blurOut" stdDeviation="20"/>
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal"/>
+        </filter>
+        <filter id="text-shadow" width="300%" height="300%" x="-100%" y="0">
+            <feOffset dx="-2" dy="0" in="SourceAlpha" result="offOut"/>
+            <feGaussianBlur in="offOut" result="blurOut" stdDeviation="5"/>
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal"/>
+        </filter>
+        <filter id="text-shadow-js" width="300%" height="300%" x="-100%" y="-100%">
+            <feOffset dx="5" dy="15" in="SourceAlpha" result="offOut"/>
+            <feGaussianBlur in="offOut" result="blurOut" stdDeviation="3"/>
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal"/>
+        </filter>
+    </defs>
+    <g class="svg-skills-1">
+        <g id="Layer_2" data-name="Layer 2">
+            <g id="Layer_1-2" data-name="Layer 1">
+                <g class="izo-rect izo-rect-html" filter="url(#drop-shadow)">
+                    <path d="M355.81,672.27,141.91,548.78c-17.21-9.94-15.05-27.29,4.82-38.77L349.26,393.08c19.87-11.47,49.94-12.72,67.15-2.78l213.9,123.49c17.21,9.94,15.05,27.29-4.82,38.77L423,669.49C403.08,681,373,682.21,355.81,672.27Z" class="svg-skills-3"/>
+                </g>
+                <text class="svg-skills-html" filter="url(#text-shadow)" transform="matrix(0.87, -0.5, 0, 1, 432.06, 646.06)">
+                    HTML
+                </text>
+                <text class="svg-skills-html" filter="url(#text-shadow)" transform="matrix(0.87, 0.5, 0, 1, 182.39, 554.79)">
+                    HTML
+                </text>
+                <g>
+                    <line x1="167.44" x2="167.44" y1="530.06" y2="193.05" class="svg-skills-more-line-html"/>
+                    <circle cx="167.44" cy="193.05" r="4.33" class="svg-skills-more-circle-html"/>
+                </g>
+                <g class="izo-rect izo-rect-css" filter="url(#drop-shadow)">
+                    <path d="M355,602.43,158.81,489.18c-15.78-9.11-13.8-25,4.42-35.55L349,346.4c18.22-10.52,45.79-11.66,61.58-2.55L606.67,457.1c15.78,9.11,13.8,25-4.42,35.55L416.53,599.87C398.3,610.4,370.74,611.54,355,602.43Z" class="svg-skills-3"/>
+                </g>
+                <text class="svg-skills-css" filter="url(#text-shadow)" transform="matrix(0.87, -0.5, 0, 1, 435.06, 556.06)">
+                    CSS
+                </text>
+                <text class="svg-skills-css" filter="url(#text-shadow)" transform="matrix(0.87, 0.5, 0, 1, 223.39, 489.79)">
+                    CSS
+                </text>
+                <g>
+                    <line x1="535.56" x2="535.56" y1="463.34" y2="138.38" class="svg-skills-more-line-css"/>
+                    <circle cx="535.56" cy="138.38" r="4.33" class="svg-skills-more-circle-css"/>
+                </g>
+                <g class="izo-rect izo-rect-js" filter="url(#drop-shadow)">
+                    <path d="M360.28,519.28,181.48,416.05c-14.39-8.31-12.58-22.81,4-32.41L354.8,285.91c16.61-9.59,41.74-10.63,56.13-2.33L589.72,386.81c14.39,8.31,12.58,22.81-4,32.41L416.4,517C399.79,526.54,374.66,527.58,360.28,519.28Z" class="svg-skills-3"/>
+                </g>
+                <g>
+                    <line x1="386.11" x2="386.11" y1="341.04" y2="43.71" class="svg-skills-more-line-js"/>
+                    <circle cx="386.11" cy="43.71" r="4.33" class="svg-skills-more-circle-js"/>
+                </g>
+                <g>
+                    <text class="svg-skills-js" filter="url(#text-shadow-js)" transform="translate(351.39 412.79)">
+                        JS
+                    </text>
+                </g>
+                <text class="svg-skills-txt-more-wrap" transform="translate(0 185.05)">
+                    <tspan class="svg-skills-txt-more-inner svg-txt-more-html">More about HTML skills</tspan>
+                </text>
+                <text class="svg-skills-txt-more-wrap" transform="translate(421.5 122.3)">
+                    <tspan class="svg-skills-txt-more-inner svg-txt-more-css">More about CSS skills</tspan>
+                </text>
+                <text class="svg-skills-txt-more-wrap" transform="translate(171.77 31.81)">
+                    <tspan class="svg-skills-txt-more-inner svg-txt-more-js">More about JavaScript skills</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

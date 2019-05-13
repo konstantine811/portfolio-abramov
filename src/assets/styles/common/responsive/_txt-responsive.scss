@@ -1,0 +1,17 @@
+@media (max-width: 1511px) {
+  .large-title {
+    font-size: 88px;
+  }
+}
+
+.large-title {
+  @include for-tablet-landscape-down {
+    font-size: 55px;
+  }
+}
+
+.small-txt {
+  @include for-tablet-landscape-down {
+    font-size: 30px;
+  }
+}

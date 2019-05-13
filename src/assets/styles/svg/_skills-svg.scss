@@ -1,0 +1,84 @@
+#AboutJavaScript, #AboutCSS, #AboutHtml {
+  opacity: 0;
+}
+
+.skills-izometric-wrap {
+  transform: scale(0.9) translate(6%, 5%);
+}
+
+.html-rect-self, .css-rect-self, .js-rect-self {
+  animation-name: layer-self-anim;
+  animation-duration: 6s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+.js-rect, .css-rect, .html-rect {
+  animation-name: layer-anim;
+  animation-duration: 6s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+ }
+
+ .css-rect {
+  animation-delay: 1s;
+ }
+
+ .html-rect {
+   animation-delay: 2s;
+ }
+
+ .js-rect-top, .css-rect-top, .html-rect-top {
+  fill: #292d3e;
+}
+
+.html-rect-bottom, .css-rect-bottom, .js-rect-bottom {
+  fill: #353b4c;
+}
+
+.html-rect-side, .css-rect-side, .js-rect-side {
+  fill: #212430;
+}
+
+.text-js, .text-css {
+  font-size: 27pt;
+  fill: $orange;
+  font-family: MyriadPro-Regular, Myriad Pro;
+}
+
+.text-blue {
+  fill: $blue;
+}
+
+.text-blue-light {
+  fill: $blue-light;
+}
+
+.text-green {
+  fill: $green;
+}
+
+.text-red-light {
+  fill: $red-light;
+}
+
+.text-silver-light {
+  fill: $silver-light-2;
+}
+
+.text-svg-font {
+  font-family: MyriadPro-Regular, Myriad Pro;
+}
+
+.text-small {
+  font-size: 14pt;
+}
+
+
+.text-large {
+  font-size: 27pt;
+}
+
+

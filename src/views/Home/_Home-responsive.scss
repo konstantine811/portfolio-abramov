@@ -1,0 +1,11 @@
+.txt-name-align {
+  @include for-desktop-down {
+    text-align: center;
+  }
+}
+
+.txt-title__mobile-space {
+  @include for-phone-only {
+    padding: 15px 0;
+  }
+}

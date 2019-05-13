@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="input-svg-box">
+    <defs>
+        <filter id="Rectangle_12" width="130%" height="250%" x="-15%" y="-15%" filterUnits="userSpaceOnUse">
+            <feOffset dy="7" input="SourceAlpha"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-opacity="0.659"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g filter="url(#Rectangle_12)">
+        <g id="Rectangle_12-2" fill="none" stroke="#fff" stroke-width="1" class="svg-box-field rect-stroke-anim" data-name="Rectangle 12">
+            <rect fill="none" class="rect-input-text"/>
+        </g>
+    </g>
+</svg>

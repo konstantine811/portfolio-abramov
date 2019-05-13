@@ -1,0 +1,10 @@
+.slide-show-wrap
+  .slider-wrap
+    .slide-contnet-wrap(v-for="(slide, index) in sliderContent" :key="slide.id")
+      transition(name="fade-in-slide")
+        .slider-content(v-if="slide.current")
+          .slider-content-txt
+            p.txt-large {{ slide.text }}
+    .slider-nav
+      button(@click="prev" v-if="prevShow") prev
+      button(@click="next" v-if="nextShow") next

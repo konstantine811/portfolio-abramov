@@ -1,0 +1,19 @@
+.fade-in-enter-active,
+.fade-in-leave-active {
+  transition: opacity 1.5s ease, transform 2.5s $first-anim-timing;
+}
+.fade-in-enter, .fade-in-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+  opacity: 0;
+  transform: translate(0, 30px);
+}
+
+.fade-in-txt-enter-active,
+.fade-in-txt-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-in-txt-enter, .fade-in-txt-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+  opacity: 0;
+  .txt-anim-down {
+    transform: translate(0, 100%);
+  }
+}

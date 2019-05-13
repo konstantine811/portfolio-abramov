@@ -1,0 +1,16 @@
+@mixin font-face($family, $path, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: $family;
+    src:url('../fonts/#{$path}.ttf') format('truetype');
+    font-weight: $weight;
+    font-style: $style;
+  }
+};
+
+
+@mixin font-style($family, $font-size, $weight: normal, $style: normal) {
+  font-family: $family, 'serif';
+  font-size: $font-size;
+  font-weight: $weight;
+  font-style: $style;
+}
