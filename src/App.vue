@@ -118,6 +118,9 @@ export default {
   background-size: cover;
   position: relative;
   display: flex;
+  @include for-tablet-landscape-down {
+    background-color: $silver-light;
+  }
 }
 
 .app-bgc {
@@ -127,6 +130,9 @@ export default {
   width: 100%;
   height: 100%;
   min-height: 100vh;
+  @include for-tablet-landscape-down {
+    display: none;
+  }
 }
 
 .rect-bgc {
