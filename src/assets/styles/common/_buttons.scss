@@ -18,6 +18,9 @@
     text-shadow: 5px 3px 8px rgba($black, 1);
     transform: translate(2px, 2px);
   }
+  @include for-phone-only {
+    font-size: 26px;
+  }
 }
 
 .button {

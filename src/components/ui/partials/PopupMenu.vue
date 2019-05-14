@@ -64,12 +64,12 @@ export default {
   display: block;
   text-align: center;
   background-color: rgba($white, 0.7);
-  border-bottom: 1px solid $black;
-  padding: 18px 0;
+  border-bottom: 1px solid rgba($black, 0.3);
+  padding: 1.3% 0;
   color: $black;
   text-decoration: none;
   font-family: "Amiri", sans-serif;
-  font-size: 32px;
+  font-size: 24px;
   text-transform: uppercase;
   opacity: 0;
 }

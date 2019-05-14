@@ -28,13 +28,17 @@ export default {
   color: rgba($black, 0.57);
   @include for-phone-only {
     font-size: 33px;
-    height: 29px;
+    height: 32px;
     text-align: center;
   }
 }
 
 .logo-litterale__space {
   letter-spacing: 2px;
+  padding-left: 2px;
+  @include for-phone-only {
+    padding-left: 9px;
+  }
 }
 
 .logo-litterale__space-min {

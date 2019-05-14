@@ -36,11 +36,16 @@ h6 {
 
 .txt-large {
   @include font-style("Amiri", 30px, 400, italic);
+  line-height: 35px;
   color: $black-light;
 }
 
 .small-txt {
   font-size: 44px;
+}
+
+.txt-name-align {
+  text-align: right;
 }
 
 .txt-normal {
