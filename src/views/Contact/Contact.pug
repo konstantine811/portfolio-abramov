@@ -38,8 +38,9 @@
             transition(name="fade-in-txt")
               .error-wrap.error-wrap__space(v-if="$v.form.message.$dirty && !$v.form.message.minLength")
                 .error-txt.txt-anim-down Your message is too short
-          .form-button__wrap
-            button.button-reset.button(type="submit" :disabled="$v.form.$invalid") Submit
+          transition(name="fade-in-txt")
+            .form-button__wrap(v-if="!buttonNone")
+              button.button-reset.button(type="submit" :disabled="$v.form.$invalid") Submit
           transition(name="fade-in-txt")
             .error-wrap.error-wrap__space-response(v-if="responseData.error")
               .error-txt.txt-anim-down {{responseData.error}}

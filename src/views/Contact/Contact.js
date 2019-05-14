@@ -14,7 +14,8 @@ export default {
         success: null,
         error: null
       },
-      errorSend: null
+      errorSend: null,
+      buttonNone: false
     };
   },
   validations: {
@@ -30,6 +31,7 @@ export default {
       if (this.$v.form.$error) {
         return;
       }
+      this.buttonNone = true;
       axios
         .post("https://portfolio-abramov.herokuapp.com/api/send", {
           name: this.form.name,
