@@ -2,8 +2,6 @@
 //Adobe Arabic
 @include font-face("Adobe Arabic", "AdobeArabic/AdobeArabic-Regular", 400);
 @include font-face("Adobe Arabic", "AdobeArabic/AdobeArabic-Italic", 400, italic);
-@include font-face("Adobe Arabic", "AdobeArabic/AdobeArabic-Bold", 600);
-@include font-face("Adobe Arabic", "AdobeArabic/AdobeArabic-BoldItalic", 600, italic);
 
 p,
 h1,
@@ -67,13 +65,9 @@ h6 {
   color: $blue-light;
 }
 
-.txt-bold {
-  font-weight: 600;
-}
-
 h2.txt-second,
 .txt-second {
-  @include font-style("Adobe Arabic", 36px, 600);
+  @include font-style("Adobe Arabic", 36px, 400);
   color: $black-light;
 }
 
