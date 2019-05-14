@@ -7,8 +7,7 @@
 .about-page-slideshow-container {
   @include for-tablet-landscape-down {
     padding: 0;
-    height: calc(100vh - 90px);
-    margin-top: 76px;
+    height: 100vh;
   }
 }
 
@@ -24,6 +23,18 @@
     opacity: 1;
     width: 100%;
     height: 100%;
+  }
+}
+
+.slide-img-container {
+  @include for-tablet-landscape-down {
+    height: calc(100% - 40px);
+  }
+}
+
+.about-slideshow-skills-wrap {
+  @include for-tablet-landscape-down {
+    transition: all 0.3s ease;
   }
 }
 

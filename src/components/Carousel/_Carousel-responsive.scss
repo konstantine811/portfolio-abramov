@@ -48,6 +48,14 @@
   }
 }
 
+.slider,
+.slider.slide-0,
+.slider.slide-2 {
+  @include for-tablet-landscape-down {
+    transition: transform 0.3s ease;
+  }
+}
+
 .home-down {
   .work-portfolio.slideUp {
     .slider.slide-0,
