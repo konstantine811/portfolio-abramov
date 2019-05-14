@@ -32,6 +32,12 @@
   }
 }
 
+.about-slideshow-image {
+  @include for-phone-only {
+    height: 46%;
+  }
+}
+
 .about-slideshow-skills-wrap {
   @include for-tablet-landscape-down {
     transition: all 0.3s ease;
