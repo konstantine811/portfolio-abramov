@@ -38,7 +38,7 @@ app.post("/api/send", (req, res) => {
     secure: false,
     service: "gmail",
     auth: {
-      user: req.body.email,
+      user: "constainabrams@gmail.com",
       pass: "icrqkcnxztjlqmpm"
     },
     tls: {
