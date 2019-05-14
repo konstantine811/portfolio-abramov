@@ -26,7 +26,7 @@ app.post("/api/send", (req, res) => {
 
   var mailOptions = {
     from: req.body.name, // sender address
-    to: req.body.email, // list of receivers
+    to: "constainabrams@gmail.com", // list of receivers
     subject: "My site contact from: " + req.body.name, // Subject line
     text: req.body.message, // plain text body
     html: output // html body
@@ -38,7 +38,7 @@ app.post("/api/send", (req, res) => {
     secure: false,
     service: "gmail",
     auth: {
-      user: "constainabrams@gmail.com",
+      user: req.body.email,
       pass: "icrqkcnxztjlqmpm"
     },
     tls: {
