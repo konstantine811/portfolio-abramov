@@ -68,7 +68,7 @@ export default {
   padding: 18px 0;
   color: $black;
   text-decoration: none;
-  font-family: "Adobe Arabic", sans-serif;
+  font-family: "Amiri", sans-serif;
   font-size: 32px;
   text-transform: uppercase;
   opacity: 0;

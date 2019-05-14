@@ -1,80 +1,82 @@
 .contact-page
   .contact-page-wrap-box.d-flex.justify-content-center
     .box-silver.align-self-center
-      .txt-anim-up__wrap
-        h2.txt-second.txt-center.contact-box__title Contact form
-      .contact-box-wrap
-        form.contact-box-form.box-wrapper(@submit.prevent="sendMessage" method="post")
-          .form-input__wrap
-            label.name-wrap.txt-large.txt-normal.txt-anim-up__wrap.inline-block
-              span.label-form-anim Your name
-            .input-wrap.input-wrap__space
-              include ./svg/svg-input-box.svg
-              input.input-field.small-field.txt-large(type="text" v-model="$v.form.name.$model")
-            transition(name="fade-in-txt")
-              .error-wrap.error-wrap__space(v-if="!$v.form.name.required && $v.form.name.$dirty")
-                .error-txt.txt-anim-down Please enter your name
-          .form-input__wrap
-            label.email-wrap.txt-large.txt-normal.txt-anim-up__wrap.inline-block
-              span.label-form-anim Your email
-            .input-wrap.input-wrap__space
-              include ./svg/svg-input-box.svg
-              input.input-field.small-field.txt-large(type="text" v-model="$v.form.email.$model")
-            transition(name="fade-in-txt")
-              .error-wrap.error-wrap__space(v-if="!$v.form.email.required && $v.form.email.$dirty")
-                .error-txt.txt-anim-down Please enter your email
-            transition(name="fade-in-txt")
-              .error-wrap.error-wrap__space(v-if="$v.form.email.$dirty && !$v.form.email.email")
-                .error-txt.txt-anim-down Please enter correct email
-          .form-input__wrap
-            label.txt-large.txt-normal.txt-anim-up__wrap.inline-block
-              span.label-form-anim.txt-anim-down Your message
-            .textarea-wrap.textarea-wrap__space
-              include ./svg/svg-textarea-box.svg
-              textarea.input-field.large-field.textarea-field.txt-large(rows="40" cols="85" v-model="$v.form.message.$model")
-            transition(name="fade-in-txt")
-              .error-wrap.error-wrap__space(v-if="!$v.form.message.required && $v.form.message.$dirty")
-                .error-txt.txt-anim-down Please enter your message for me
-            transition(name="fade-in-txt")
-              .error-wrap.error-wrap__space(v-if="$v.form.message.$dirty && !$v.form.message.minLength")
-                .error-txt.txt-anim-down Your message is too short
-          transition(name="fade-in-txt")
-            .form-button__wrap(v-if="!buttonNone")
-              button.button-reset.button(type="submit" :disabled="$v.form.$invalid") Submit
-          transition(name="fade-in-txt")
-            .error-wrap.error-wrap__space-response(v-if="responseData.error")
-              .error-txt.txt-anim-down {{responseData.error}}
-          transition(name="fade-in-txt")
-            .error-wrap.error-wrap__space-response(v-if="errorSend")
-              .error-txt.txt-anim-down {{errorSend}}
-          transition(name="fade-in-txt")
-            .error-wrap.error-wrap__space-response(v-if="responseData.success")
-              .success-txt.txt-anim-down {{responseData.success}}
-        .contact-box-link.box-wrapper
-          .contact-box-link__title
-            h3.txt-large.social-title-anim Social link
-          .contact-box-link__items.d-flex
-            .circle-link-wrap
-              a.circle-link(href="https://www.facebook.com/constaine.abrams" target="_blank")
-                span.link-txt.link-txt--facebook f
-              p.circle-link-hover-txt.circle-link-hover-txt__space Facebook
-            .circle-link-wrap
-              a.circle-link(href="https://www.linkedin.com/in/konstantin-abramov-959584142" target="_blank")
-                span.link-txt.link-txt--linkedin in
-              p.circle-link-hover-txt.circle-link-hover-txt__space LinkedIn
-            .circle-link-wrap
-              a.circle-link(href="https://github.com/konstantine811" target="_blank")
-                span.link-txt.link-txt--git git
-              p.circle-link-hover-txt.circle-link-hover-txt__space GitHub
-            .circle-link-wrap
-              a.circle-link(href="https://www.upwork.com/o/profiles/users/_~01848b44ccd76bfd7a/" target="_blank")
-                span.link-txt.link-txt--up Up
-              p.circle-link-hover-txt.circle-link-hover-txt__space Upwork
-            .circle-link-wrap
-              a.circle-link(href="https://join.skype.com/invite/o4DeRzYM4YT2" target="_blank")
-                span.link-txt.link-txt--google S
-              p.circle-link-hover-txt.circle-link-hover-txt__space Skype
-            .circle-link-wrap
-              a.circle-link(href="mailto:constainabrams@gmail.com" target="_blank")
-                span.link-txt.link-txt--google G
-              p.circle-link-hover-txt.circle-link-hover-txt__space Google
+      #scroll-area.scroll-area.over-hidden
+        smooth-scrollbar
+          .txt-anim-up__wrap
+            h2.txt-second.txt-center.contact-box__title Contact form
+          .contact-box-wrap
+            form.contact-box-form.box-wrapper(@submit.prevent="sendMessage" method="post")
+              .form-input__wrap
+                label.name-wrap.txt-large.txt-normal.txt-anim-up__wrap.inline-block
+                  span.label-form-anim Your name
+                .input-wrap.input-wrap__space
+                  include ./svg/svg-input-box.svg
+                  input.input-field.small-field.txt-large(type="text" v-model="$v.form.name.$model")
+                transition(name="fade-in-txt")
+                  .error-wrap.error-wrap__space(v-if="!$v.form.name.required && $v.form.name.$dirty")
+                    .error-txt.txt-anim-down Please enter your name
+              .form-input__wrap
+                label.email-wrap.txt-large.txt-normal.txt-anim-up__wrap.inline-block
+                  span.label-form-anim Your email
+                .input-wrap.input-wrap__space
+                  include ./svg/svg-input-box.svg
+                  input.input-field.small-field.txt-large(type="text" v-model="$v.form.email.$model")
+                transition(name="fade-in-txt")
+                  .error-wrap.error-wrap__space(v-if="!$v.form.email.required && $v.form.email.$dirty")
+                    .error-txt.txt-anim-down Please enter your email
+                transition(name="fade-in-txt")
+                  .error-wrap.error-wrap__space(v-if="$v.form.email.$dirty && !$v.form.email.email")
+                    .error-txt.txt-anim-down Please enter correct email
+              .form-input__wrap
+                label.txt-large.txt-normal.txt-anim-up__wrap.inline-block
+                  span.label-form-anim.txt-anim-down Your message
+                .textarea-wrap.textarea-wrap__space
+                  include ./svg/svg-textarea-box.svg
+                  textarea.input-field.large-field.textarea-field.txt-large(rows="40" cols="85" v-model="$v.form.message.$model")
+                transition(name="fade-in-txt")
+                  .error-wrap.error-wrap__space(v-if="!$v.form.message.required && $v.form.message.$dirty")
+                    .error-txt.txt-anim-down Please enter your message for me
+                transition(name="fade-in-txt")
+                  .error-wrap.error-wrap__space(v-if="$v.form.message.$dirty && !$v.form.message.minLength")
+                    .error-txt.txt-anim-down Your message is too short
+              transition(name="fade-in-txt")
+                .form-button__wrap(v-if="!buttonNone")
+                  button.button-reset.button(type="submit" :disabled="$v.form.$invalid") Submit
+              transition(name="fade-in-txt")
+                .error-wrap.error-wrap__space-response(v-if="responseData.error")
+                  .error-txt.txt-anim-down {{responseData.error}}
+              transition(name="fade-in-txt")
+                .error-wrap.error-wrap__space-response(v-if="errorSend")
+                  .error-txt.txt-anim-down {{errorSend}}
+              transition(name="fade-in-txt")
+                .error-wrap.error-wrap__space-response(v-if="responseData.success")
+                  .success-txt.txt-anim-down {{responseData.success}}
+            .contact-box-link.box-wrapper
+              .contact-box-link__title
+                h3.txt-large.social-title-anim Social link
+              .contact-box-link__items.d-flex
+                .circle-link-wrap
+                  a.circle-link(href="https://www.facebook.com/constaine.abrams" target="_blank")
+                    span.link-txt.link-txt--facebook f
+                  p.circle-link-hover-txt.circle-link-hover-txt__space Facebook
+                .circle-link-wrap
+                  a.circle-link(href="https://www.linkedin.com/in/konstantin-abramov-959584142" target="_blank")
+                    span.link-txt.link-txt--linkedin in
+                  p.circle-link-hover-txt.circle-link-hover-txt__space LinkedIn
+                .circle-link-wrap
+                  a.circle-link(href="https://github.com/konstantine811" target="_blank")
+                    span.link-txt.link-txt--git git
+                  p.circle-link-hover-txt.circle-link-hover-txt__space GitHub
+                .circle-link-wrap
+                  a.circle-link(href="https://www.upwork.com/o/profiles/users/_~01848b44ccd76bfd7a/" target="_blank")
+                    span.link-txt.link-txt--up Up
+                  p.circle-link-hover-txt.circle-link-hover-txt__space Upwork
+                .circle-link-wrap
+                  a.circle-link(href="https://join.skype.com/invite/o4DeRzYM4YT2" target="_blank")
+                    span.link-txt.link-txt--google S
+                  p.circle-link-hover-txt.circle-link-hover-txt__space Skype
+                .circle-link-wrap
+                  a.circle-link(href="mailto:constainabrams@gmail.com" target="_blank")
+                    span.link-txt.link-txt--google G
+                  p.circle-link-hover-txt.circle-link-hover-txt__space Google

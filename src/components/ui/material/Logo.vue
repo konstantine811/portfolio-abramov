@@ -1,9 +1,9 @@
 <template lang="pug">
   .logo-wrap
     .txt-anim-up__wrap-logo
-      .logo-txt.txt-anim-up ab
+      .logo-txt.txt-anim-up.logo-litterale__space ab
     .txt-anim-up__wrap-logo
-      .logo-txt.txt-anim-up rm
+      .logo-txt.txt-anim-up.logo-litterale__space-min rm
 </template>
 
 <script>
@@ -18,9 +18,9 @@ export default {
 .logo-txt {
   display: block;
   width: 64px;
-  height: 36px;
-  font-family: "Courier New", sans-serif;
-  font-size: 46px;
+  height: 32px;
+  font-family: "Amiri", sans-serif;
+  font-size: 36px;
   line-height: 29px;
   text-transform: uppercase;
   text-shadow: 4px 7px 4px $black;
@@ -31,6 +31,14 @@ export default {
     height: 29px;
     text-align: center;
   }
+}
+
+.logo-litterale__space {
+  letter-spacing: 2px;
+}
+
+.logo-litterale__space-min {
+  letter-spacing: -5px;
 }
 .logo-wrap {
   transition: all 0.3s ease-in-out;

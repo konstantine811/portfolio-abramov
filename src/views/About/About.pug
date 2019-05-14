@@ -11,7 +11,7 @@
             #scroll-area.scroll-area.over-hidden
               smooth-scrollbar
                 .about-slide-text-wrap
-                  p.txt-large.txt-show-anim Hi, I'm Konstantin Abramov. I am a Frontend developer and at the moment my experience is 2+ years. With great desire, ambition, dedication, sense of style and creativity, I approach every project.
+                  p.txt-large.txt-show-anim.txt-center Hi, I'm Konstantin Abramov. I am a Frontend developer and at the moment my experience is 2+ years. With great desire, ambition, dedication, sense of style and creativity, I approach every project.
         transition(name="slide-show")
           .about-slide-second.slide-img-container.d-flex.flex-column.justify-content-space-between(v-if="slide === 2")
             .about-slideshow-skills-wrap
@@ -19,7 +19,7 @@
             #scroll-area.scroll-area.over-hidden
               smooth-scrollbar
                 .about-slide-text-wrap
-                  p.txt-large.txt-show-anim My main skills are HTML (Pug, BEM, Bootstrap), CSS (SCSS, Animation) and JavaScirpt (Jquery, Vue.js, Node.js).
+                  p.txt-large.txt-show-anim.txt-center My main skills are HTML (Pug, BEM, Bootstrap), CSS (SCSS, Animation) and JavaScirpt (Jquery, Vue.js, Node.js).
         transition(name="slide-show")
           .about-slide-second.slide-img-container.d-flex.flex-column.justify-content-space-between(v-if="slide === 3")
             .about-slideshow-skills-wrap
@@ -27,7 +27,7 @@
             #scroll-area.scroll-area.over-hidden
               smooth-scrollbar
                 .about-slide-text-wrap
-                  p.txt-large.txt-show-anim.txt-center
+                  p.txt-large.txt-show-anim.txt-center.only-device
                     | For the markup, when writing html code, I use
                     | the methodology of
                     span.txt-red-light  BEM
@@ -40,6 +40,8 @@
                     | Using the ready-made components and frame of the
                     span.txt-red-light  Bootstrap
                     |  framework allows me to make development even faster and adaptive.
+                  p.txt-large.txt-show-anim.txt-center.talet For the markup, when writing html code, I use
+                    span.txt-red-light  BEM, PUG, Bootstrap and other ...
         transition(name="slide-show")
           .about-slide-second.slide-img-container.d-flex.flex-column.justify-content-space-between(v-if="slide === 4")
             .about-slideshow-skills-wrap
@@ -47,7 +49,7 @@
             #scroll-area.scroll-area.over-hidden
               smooth-scrollbar
                 .about-slide-text-wrap
-                  p.txt-large.txt-show-anim.txt-center
+                  p.txt-large.txt-show-anim.txt-center.only-device
                     | I love style and beauty, so writing
                     span.txt-red-light  CSS
                     |  for me is always fascinating, and animating a
@@ -70,6 +72,12 @@
                     | I work with
                     span.txt-red-light  SVG
                     |  graphics.
+                    p.txt-large.txt-show-anim.txt-center.only-tablet
+                      | I love style and beauty, so writing
+                      span.txt-red-light  CSS
+                      |  for me is always fascinating.
+                      | To expand my skill with CSS, I use the
+                      span.txt-red-light  SCSS preprocessor, SVG and AdobeXD, Illustartor, Photoshop and Adobe After Effects.
         transition(name="slide-show")
           .about-slide-second.slide-img-container.d-flex.flex-column.justify-content-space-between(v-if="slide === 5")
             .about-slideshow-skills-wrap
@@ -77,7 +85,7 @@
             #scroll-area.scroll-area.over-hidden
               smooth-scrollbar
                 .about-slide-text-wrap
-                  p.txt-large.txt-show-anim.txt-center With
+                  p.txt-large.txt-show-anim.txt-center.only-device With
                     span.txt-red-light  JavaScript
                     | , we do not part with the first days of
                     | my entry into web development. From the very beginning,
@@ -131,6 +139,8 @@
                     span.txt-red-light  Git
                     |  and
                     span.txt-red-light  Heroku.
+                  p.txt-large.txt-show-anim.txt-center.only-tablet
+                    span.txt-red-light  JavaScript(ES5, ES6), Vue.js (vuex, vuetify, vueelidate), Git, Jquery, Angular.js, Node.js, Gulp.js
         .about-slide-controls-wrap.d-flex.justify-content-space-between
           .button-wrap
             transition(name="fade-in")
