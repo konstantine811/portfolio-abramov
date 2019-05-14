@@ -37,5 +37,6 @@
 .txt-large {
   @include for-phone-only {
     font-size: 21px;
+    line-height: 28px;
   }
 }
