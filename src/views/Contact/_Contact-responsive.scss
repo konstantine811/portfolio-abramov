@@ -46,3 +46,19 @@
     padding-top: 27px;
   }
 }
+
+.up .contact-page {
+  .box-silver {
+    @include for-tablet-landscape-down {
+      animation: none;
+    }
+  }
+}
+
+.down .active .contact-page {
+  .box-silver {
+    @include for-tablet-landscape-down {
+      animation: none;
+    }
+  }
+}

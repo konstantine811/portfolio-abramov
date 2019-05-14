@@ -79,6 +79,7 @@
   height: auto;
   margin: 0 auto;
   max-width: 85%;
+  position: relative;
 }
 
 .form-input__wrap {
@@ -87,16 +88,15 @@
 }
 
 .error-wrap {
-  position: absolute;
+  position: relative;
+  padding-top: 10px;
 }
 
 .error-wrap__space {
-  bottom: -35px;
   overflow: hidden;
 }
 
 .error-wrap__space-response {
-  bottom: -63px;
   overflow: hidden;
 }
 
@@ -175,6 +175,7 @@
 
 .contact-box-link__items {
   padding-top: 22px;
+  flex-wrap: wrap;
 }
 
 @import "./Contact-responsive";
