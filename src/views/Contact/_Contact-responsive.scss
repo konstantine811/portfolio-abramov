@@ -1,0 +1,48 @@
+.box-wrapper {
+  @include for-tablet-landscape-down {
+    max-width: 90%;
+  }
+}
+
+.form-input__wrap {
+  @include for-tablet-landscape-down {
+    padding-top: 9px;
+  }
+}
+
+.textarea-wrap,
+.large-field {
+  @include for-tablet-landscape-down {
+    height: 80px;
+  }
+}
+
+.form-button__wrap {
+  @include for-tablet-landscape-down {
+    padding-top: 20px;
+  }
+}
+
+.circle-link-hover-txt {
+  @include for-tablet-landscape-down {
+    display: none;
+  }
+}
+
+.circle-link-wrap {
+  @include for-tablet-landscape-down {
+    padding: 0 0 23px 9px;
+  }
+}
+
+.contact-box-link__items {
+  @include for-tablet-landscape-down {
+    padding-top: 8px;
+  }
+}
+
+.contact-box-link {
+  @include for-tablet-landscape-down {
+    padding-top: 27px;
+  }
+}

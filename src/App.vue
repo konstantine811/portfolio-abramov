@@ -186,4 +186,10 @@ export default {
     padding: 0 25px;
   }
 }
+
+.section-wrap {
+  @include for-tablet-landscape-down {
+    padding: 10px;
+  }
+}
 </style>
