@@ -8,32 +8,38 @@
           .about-slide-first.slide-img-container.d-flex.flex-column.justify-content-space-between(v-if="slide === 1")
             .about-slideshow-image.about-slideshow-image__wrap
               include ../../assets/img/svg/svg-mask-slide-first.svg
-            .about-slide-text-wrap
-              p.txt-large.txt-show-anim Hi, I'm Konstantin Abramov. I am a Frontend developer and at the moment my experience is 2+ years. With great desire, ambition, dedication, sense of style and creativity, I approach every project.
+            #scroll-area.scroll-area.over-hidden
+              smooth-scrollbar
+                .about-slide-text-wrap
+                  p.txt-large.txt-show-anim Hi, I'm Konstantin Abramov. I am a Frontend developer and at the moment my experience is 2+ years. With great desire, ambition, dedication, sense of style and creativity, I approach every project.
         transition(name="slide-show")
           .about-slide-second.slide-img-container.d-flex.flex-column.justify-content-space-between(v-if="slide === 2")
             .about-slideshow-skills-wrap
               include ../../assets/img/svg/skills-izometric.svg
-            .about-slide-text-wrap
-              p.txt-large.txt-show-anim My main skills are HTML (Pug, BEM, Bootstrap), CSS (SCSS, Animation) and JavaScirpt (Jquery, Vue.js, Node.js).
+            #scroll-area.scroll-area.over-hidden
+              smooth-scrollbar
+                .about-slide-text-wrap
+                  p.txt-large.txt-show-anim My main skills are HTML (Pug, BEM, Bootstrap), CSS (SCSS, Animation) and JavaScirpt (Jquery, Vue.js, Node.js).
         transition(name="slide-show")
           .about-slide-second.slide-img-container.d-flex.flex-column.justify-content-space-between(v-if="slide === 3")
             .about-slideshow-skills-wrap
               include ../../assets/img/svg/html-skill.svg
-            .about-slide-text-wrap
-              p.txt-large.txt-show-anim.txt-center
-                | For the markup, when writing html code, I use
-                | the methodology of
-                span.txt-red-light.txt-bold  BEM
-                | - this allows me to make the html-code
-                | more extensible and create reusable interface components.
-                | Also, to extend the standard features of html,
-                | I actively use the
-                span.txt-red-light.txt-bold.txt-uppercase  pug
-                |  pre-processor and the code eventually looks more concise.
-                | Using the ready-made components and frame of the
-                span.txt-red-light.txt-bold  Bootstrap
-                |  framework allows me to make development even faster and adaptive.
+            #scroll-area.scroll-area.over-hidden
+              smooth-scrollbar
+                .about-slide-text-wrap
+                  p.txt-large.txt-show-anim.txt-center
+                    | For the markup, when writing html code, I use
+                    | the methodology of
+                    span.txt-red-light.txt-bold  BEM
+                    | - this allows me to make the html-code
+                    | more extensible and create reusable interface components.
+                    | Also, to extend the standard features of html,
+                    | I actively use the
+                    span.txt-red-light.txt-bold.txt-uppercase  pug
+                    |  pre-processor and the code eventually looks more concise.
+                    | Using the ready-made components and frame of the
+                    span.txt-red-light.txt-bold  Bootstrap
+                    |  framework allows me to make development even faster and adaptive.
         transition(name="slide-show")
           .about-slide-second.slide-img-container.d-flex.flex-column.justify-content-space-between(v-if="slide === 4")
             .about-slideshow-skills-wrap

@@ -27,3 +27,9 @@
     font-size: 28px;
   }
 }
+
+.txt-large {
+  @include for-phone-only {
+    font-size: 21px;
+  }
+}

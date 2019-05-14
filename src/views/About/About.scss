@@ -1,4 +1,5 @@
 @import "../../assets/styles/common/variables";
+@import "../../assets/styles/mixins/responsive";
 
 .about-page {
   height: 100%;
@@ -39,6 +40,8 @@
 
   // svg show
   .svg-image-constantine {
+    width: 100%;
+    height: 100%;
     opacity: 0;
     animation: fade-in 4.5s 1s ease 1 forwards;
   }
@@ -106,10 +109,15 @@
   }
 }
 
+.svg-image-const {
+  width: 100%;
+  height: 100%;
+}
+
 .about-slideshow-image {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 59%;
   background-color: $silver;
   box-shadow: 12px 18px 6px rgba($black, 0.23);
 }
@@ -171,3 +179,5 @@
   }
 }
 //end animation transition slide
+
+@import "./About-responsive";
