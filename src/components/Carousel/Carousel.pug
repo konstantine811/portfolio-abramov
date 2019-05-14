@@ -1,6 +1,6 @@
 .carousel-view
   transition-group.carousel(tag="div" v-touch:swipe="touchHandler")
-    .slider(v-for="(slide, index) in slides" :class="['slide-' + index]" :key="slide.id"  @click="slideTransition(index)")
+    .slider(v-for="(slide, index) in slides" :class="['slide-' + index]" :key="slide.id"  @click="slideMove(index, slide.url)")
       .carousel-title-wrap.carousel-title-wrap__space.transform-anim(:style="{'max-width': infoBoxWidth + 'px'}")
         p.carousel-title {{ slide.title }}
       .carousel-img-wrap.transform-anim(ref="infoBox")

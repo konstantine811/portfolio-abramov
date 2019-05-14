@@ -1,3 +1,22 @@
+.carousel {
+  @include for-tablet-landscape-down {
+    padding: 0px 0 55px 0;
+    perspective: 1900px;
+  }
+}
+
+.carousel-view {
+  @include for-tablet-landscape-down {
+    overflow: visible;
+  }
+}
+
+.carousel-img-content-hover {
+  @include for-tablet-landscape-down {
+    display: none;
+  }
+}
+
 .carousel-controls__button {
   @include for-tablet-landscape-down {
     font-size: 32px;
@@ -16,8 +35,123 @@
   }
 }
 
+.slider.slide-1 {
+  @include for-tablet-landscape-down {
+    opacity: 0;
+  }
+}
+
 .slider.slide-0 .carousel-title {
   @include for-tablet-landscape-down {
     opacity: 1;
+    font-size: 24px;
+  }
+}
+
+.home-down {
+  .work-portfolio.slideUp {
+    .slider.slide-0,
+    .slider.slide-2,
+    .carousel-controls--prev,
+    .carousel-controls--next {
+      @include for-tablet-landscape-down {
+        animation: none;
+      }
+    }
+    .carousel-img-wrap-blur {
+      @include for-tablet-landscape-down {
+        transform: scale(1, 1);
+        filter: blur(0);
+        animation: none;
+      }
+    }
+    .slider.slide-1 {
+      @include for-tablet-landscape-down {
+        animation: none;
+      }
+      animation: slide-up-down-anim 1.5s 0.4s cubic-bezier(0, 0.3, 0, 1) 1 forwards;
+      .carousel-title {
+        @include for-tablet-landscape-down {
+          transform: translate(0);
+          opacity: 1;
+          animation: none;
+        }
+      }
+    }
+  }
+  .carousel-button {
+    @include for-tablet-landscape-down {
+      opacity: 1;
+    }
+  }
+}
+
+.work-up {
+  .work-portfolio {
+    .carousel-img-wrap-blur,
+    .slider.slide-0,
+    .slider.slide-2,
+    .slider.slide-1 {
+      @include for-tablet-landscape-down {
+        animation: none;
+      }
+    }
+  }
+}
+
+.about-up,
+.contact-up {
+  .work-portfolio.slideFromDown {
+    .carousel-img-wrap-blur {
+      @include for-tablet-landscape-down {
+        transform: scale(1, 1);
+        filter: blur(0);
+        animation: none;
+      }
+    }
+    .slider.slide-0,
+    .slider.slide-2,
+    .slider.slide-1 {
+      @include for-tablet-landscape-down {
+        animation: none;
+      }
+    }
+    .slider.slide-1 {
+      .carousel-title {
+        @include for-tablet-landscape-down {
+          transform: translateY(0);
+          opacity: 1;
+          animation: none;
+        }
+      }
+    }
+    .carousel-controls--prev,
+    .carousel-controls--next {
+      @include for-tablet-landscape-down {
+        transform: translateY(0);
+        opacity: 1;
+        animation: none;
+      }
+    }
+  }
+}
+
+.work-down {
+  .slider.slide-0,
+  .slider.slide-2,
+  .slider.slide-1,
+  .carousel-img-wrap-blur,
+  .carousel-controls--prev,
+  .carousel-controls--next {
+    @include for-tablet-landscape-down {
+      animation: none;
+    }
+  }
+  .slider.slide-1 {
+    .carousel-title {
+      @include for-tablet-landscape-down {
+        animation: none;
+      }
+    }
   }
 }

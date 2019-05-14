@@ -3,7 +3,7 @@ import store from "@/store/store";
 export default {
   name: "Carousel",
   created() {
-    if (this.slides) {
+    if (this.slides && window.innerWidth >= 900) {
       const last = this.slides.pop();
       this.slides = [last].concat(this.slides);
     }
@@ -26,7 +26,10 @@ export default {
       slides: this.slideArr,
       infoBoxWidth: null,
       showPopupFrame: false,
-      frameLink: null
+      frameLink: null,
+      window: {
+        width: 0
+      }
     };
   },
   methods: {
@@ -38,11 +41,16 @@ export default {
       const last = this.slides.pop();
       this.slides = [last].concat(this.slides);
     },
-    slideTransition(index) {
-      if (index === 0) {
-        this.previous();
-      } else if (index === 2) {
-        this.next();
+    slideMove(index, url) {
+      if (this.window.width >= 900) {
+        if (index === 0) {
+          this.previous();
+        } else if (index === 2) {
+          this.next();
+        }
+      } else {
+        window.location.href = url;
+        console.log(url);
       }
     },
     touchHandler(direction) {
@@ -55,6 +63,7 @@ export default {
     matchWidth() {
       this.$nextTick(function() {
         this.infoBoxWidth = this.$refs.infoBox[1].clientWidth;
+        this.window.width = window.innerWidth;
       });
     },
     showFramePopup(link) {
