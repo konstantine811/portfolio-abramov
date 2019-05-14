@@ -5,7 +5,7 @@
     .about-page-slideshow-container
       .box-silver.d-flex.flex-column.justify-content-space-between
         transition(name="slide-show")
-          .about-slide-first.slide-img-container.d-flex.flex-column.justify-content-space-between(v-if="slide === 1")
+          .about-slide-first.slide-img-container.d-flex.flex-column.justify-content-space-between.justify-content-space-around-phone(v-if="slide === 1")
             .about-slideshow-image.about-slideshow-image__wrap
               include ../../assets/img/svg/svg-mask-slide-first.svg
             #scroll-area.scroll-area.over-hidden
@@ -13,7 +13,7 @@
                 .about-slide-text-wrap
                   p.txt-large.txt-show-anim.txt-center Hi, I'm Konstantin Abramov. I am a Frontend developer and at the moment my experience is 2+ years. With great desire, ambition, dedication, sense of style and creativity, I approach every project.
         transition(name="slide-show")
-          .about-slide-second.slide-img-container.d-flex.flex-column.justify-content-space-between(v-if="slide === 2")
+          .about-slide-second.slide-img-container.d-flex.flex-column.justify-content-space-between.justify-content-space-around-phone(v-if="slide === 2")
             .about-slideshow-skills-wrap
               include ../../assets/img/svg/skills-izometric.svg
             #scroll-area.scroll-area.over-hidden
@@ -21,7 +21,7 @@
                 .about-slide-text-wrap
                   p.txt-large.txt-show-anim.txt-center My main skills are HTML (Pug, BEM, Bootstrap), CSS (SCSS, Animation) and JavaScirpt (Jquery, Vue.js, Node.js).
         transition(name="slide-show")
-          .about-slide-second.slide-img-container.d-flex.flex-column.justify-content-space-between(v-if="slide === 3")
+          .about-slide-second.slide-img-container.d-flex.flex-column.justify-content-space-between.justify-content-space-around-phone(v-if="slide === 3")
             .about-slideshow-skills-wrap
               include ../../assets/img/svg/html-skill.svg
             #scroll-area.scroll-area.over-hidden
@@ -43,7 +43,7 @@
                   p.txt-large.txt-show-anim.txt-center.talet For the markup, when writing html code, I use
                     span.txt-red-light  BEM, PUG, Bootstrap and other ...
         transition(name="slide-show")
-          .about-slide-second.slide-img-container.d-flex.flex-column.justify-content-space-between(v-if="slide === 4")
+          .about-slide-second.slide-img-container.d-flex.flex-column.justify-content-space-between.justify-content-space-around-phone(v-if="slide === 4")
             .about-slideshow-skills-wrap
               include ../../assets/img/svg/css-skill.svg
             #scroll-area.scroll-area.over-hidden
@@ -79,7 +79,7 @@
                       | To expand my skill with CSS, I use the
                       span.txt-red-light  SCSS preprocessor, SVG and AdobeXD, Illustartor, Photoshop and Adobe After Effects.
         transition(name="slide-show")
-          .about-slide-second.slide-img-container.d-flex.flex-column.justify-content-space-between(v-if="slide === 5")
+          .about-slide-second.slide-img-container.d-flex.flex-column.justify-content-space-between.justify-content-space-around-phone(v-if="slide === 5")
             .about-slideshow-skills-wrap
               include ../../assets/img/svg/js-skill.svg
             #scroll-area.scroll-area.over-hidden

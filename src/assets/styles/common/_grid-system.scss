@@ -19,3 +19,9 @@
 .align-self-center {
   align-self: center;
 }
+
+.justify-content-space-around-phone {
+  @include for-phone-only {
+    justify-content: space-around;
+  }
+}
