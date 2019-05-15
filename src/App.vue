@@ -181,7 +181,7 @@ export default {
 .section-wrap {
   margin: 0 auto;
   width: 100%;
-  padding-right: 130px;
+  padding-right: 348px;
 }
 
 @media (max-width: $md-device) {

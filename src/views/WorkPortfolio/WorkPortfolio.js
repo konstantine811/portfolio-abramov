@@ -17,50 +17,70 @@ export default {
         {
           title: "ADx Healthcare",
           image: require("@/assets/img/portfolio/adx-project.png"),
-          indicator: "Slide A",
-          url: "https://stage.adx.ixlayer.com/home",
+          url: "https://genetics.adxhealthcare.com",
           description:
-            "This pfoject I use Angular.js HTML, CSS.it SDF LKSDF SDFSD",
-          frameMovie:
-            "https://dms.licdn.com/playback/C4D05AQGL82cA0CVDJg/67ac8e3cbcd74588afcad8bf3ad5b740/feedshare-mp4_3300-captions-thumbnails/1507940147251-drlcss?e=1555261200&v=beta&t=doSZz2LIIFchPN7vY7u-3R2M3-24q4e7rMiOl6Owoco",
+            "This project was created to order your dna research. On this project, as a Front-end developer, I used the following technologies: HTML, SCSS, Bootstrap and Angular.js.",
+          frameMovie: "https://www.youtube.com/embed/bhOnEU3tc2U",
           id: 1
         },
         {
           title: "IxLayer",
           image: require("@/assets/img/portfolio/ixlayer-project.png"),
-          indicator: "Slide B",
           url: "https://ixlayer.com/",
           description:
-            "This pfoject I use Angular.js HTML, CSS.it SDF LKSDF SDFSD",
+            "This is a San Francisco startup project for a complete solution for launching your genetic product. For this project, I used Gulp, HTML(Jade), SCSS and Javascript.",
           id: 2
         },
         {
           title: "IxLayer Phone Project",
           image: require("@/assets/img/portfolio/ixlayer-phone-project.png"),
-          indicator: "Slide C",
           url: "https://ixlayer-phone.herokuapp.com/",
-          description: "Thsdfsdfar.js HTML, CSS.it SDF LKSDF SDFSD",
+          description:
+            "This is my first isometric practice project, which I drew with the help of Adobe Illustrator and then importing the SVG, I animated it with the help of SCSS and assembled the project on Vue.js.",
           frameMovie: "https://www.youtube.com/embed/VBXBswzuHKA",
           id: 3
         },
         {
-          title: "IxLayer Phone Project",
-          image: require("@/assets/img/portfolio/ixlayer-phone-project.png"),
-          indicator: "Slide C",
-          url: "https://ixlayer-phone.herokuapp.com/",
+          title: "GOALZERO",
+          image: require("@/assets/img/portfolio/goalzero.png"),
+          url: "https://www.goalzero.com/",
           description:
-            "This pfoject I use Angular.js HTML, CSS.it SDF LKSDF SDFSD",
-          frameMovie: "https://www.youtube.com/embed/VBXBswzuHKA",
+            "The site for the sale of smart portable electrical equipment. Here I, as a Front-end developer, together with the team, took part in the markup and styling of the site with the help of HTML, SCSS and Bootstrap",
           id: 4
         },
         {
-          title: "IxLayer",
-          image: require("@/assets/img/portfolio/ixlayer-project.png"),
-          indicator: "Slide B",
-          url: "https://ixlayer.com/",
+          title: "ixStore",
+          image: require("@/assets/img/portfolio/ixStore.png"),
           description:
-            "This pfoject I use Angular.js HTML, CSS.it SDF LKSDF SDFSD",
+            "This is a template project for IxStore. Here, for the first time in practice, I began to use the Vue.js (Vuelidate, I18n, Vuex) as well as HTML and SCSS.",
+          frameMovie: "https://www.youtube.com/embed/dfgSBUpxh5Y",
           id: 5
+        },
+        {
+          title: "Portfolio",
+          image: require("@/assets/img/portfolio/portfolio-abrams.png"),
+          url: "https://abrams-portfolio.herokuapp.com",
+          description:
+            "This one is my early portfolio. Here I used Angular 4 for the sake of practice.",
+          frameMovie: "https://www.youtube.com/embed/BKRKgigvtqQ",
+          id: 6
+        },
+        {
+          title: "ixLayer Admin",
+          image: require("@/assets/img/portfolio/ixLayerAdmin.png"),
+          description:
+            "This is the admin panel for ixLayer. We developed this site in a team with another developer. My main task was markup and styling. The technologies I used here are HTML, SCSS, Vue.js and Material Component Framework Vuetify.",
+          frameMovie: "https://www.youtube.com/embed/dUZtXm9OwoE",
+          id: 7
+        },
+        {
+          title: "Agropool",
+          image: require("@/assets/img/portfolio/agropool.png"),
+          url: "https://www.agropool.ch/de/",
+          description:
+            "Project Agropool on the sale of agricultural machinery (Switzerland). Here I, as a  Front-end developer, used HTML, SCSS, Semantic UI and Javascript. The site also uses two color themes, so when writing styles, an approach was used to change different themes.",
+          frameMovie: "https://www.youtube.com/embed/q1JZYcp6xsc",
+          id: 8
         }
       ]
     };

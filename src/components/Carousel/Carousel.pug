@@ -10,7 +10,7 @@
           p.carousel-img-content-hover-title {{slide.description}}
           .link-wrap(:class="{'alone-link': !slide.frameMovie}")
             button(@click="showFramePopup(slide.frameMovie)" v-if="slide.frameMovie").carousel-img-content-hover-button Show movie presenation
-            a(:href="slide.url" target="_blank").carousel-img-content-hover-link link to site
+            a(:href="slide.url" target="_blank" v-if="slide.url").carousel-img-content-hover-link link to site
   .carousel-controls.d-flex.justify-content-space-between(:style="{width: infoBoxWidth + 'px'}")
     button.button-reset.button-text.carousel-button.carousel-controls--prev(@click="previous") prev
     button.button-reset.button-text.carousel-button.carousel-controls--next(@click="next") next
