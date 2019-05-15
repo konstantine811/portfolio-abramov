@@ -87,9 +87,15 @@
       }
     }
   }
+  .carousel-controls--prev,
+  .carousel-controls--next {
+    @include for-tablet-landscape-down {
+      opacity: 1 !important;
+    }
+  }
   .carousel-button {
     @include for-tablet-landscape-down {
-      opacity: 1;
+      opacity: 1 !important;
     }
   }
 }
