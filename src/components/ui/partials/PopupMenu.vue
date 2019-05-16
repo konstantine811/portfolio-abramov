@@ -9,7 +9,7 @@
   transition(name="fade-popup")
     .popup(@click.self="closeMenuPopup()")
       .close-button(@click.self="closeMenuPopup()")
-      iframe(src="https://www.youtube.com/embed/Y7yJmmqUhvQ?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen).popup-iframe.only-device
+      iframe(:src="urlVideoPortfolio" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen).popup-iframe.only-device
       .mobile-menu.only-tablet
         ul.mobile-menu-wrap
           each val in values
@@ -18,7 +18,7 @@
           li.mobile-menu-item
               a(@click.self="showPresantationWindow = true").mobile-navigation-link Presentation video
       .mobile-presentation-window(v-if="showPresantationWindow" @click.self="showPresantationWindow = false")
-        iframe(src="https://www.youtube.com/embed/Y7yJmmqUhvQ?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen).mobile-presenation
+        iframe(:src="urlVideoPortfolio" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen).mobile-presenation
 
 </template>
 
@@ -29,7 +29,8 @@ export default {
   name: "PopupMenu",
   data() {
     return {
-      showPresantationWindow: false
+      showPresantationWindow: false,
+      urlVideoPortfolio: "https://www.youtube.com/embed/4-uMwaW65kI"
     };
   },
   computed: {
