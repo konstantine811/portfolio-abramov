@@ -169,3 +169,19 @@
     }
   }
 }
+
+@media (max-width: 1750px) {
+  .carousel-img-content-hover-title {
+    font-size: 16px;
+    padding: 0 10px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .carousel-img-content-hover-title {
+    font-size: 12px;
+    padding: 0 5px;
+    line-height: 18px;
+  }
+}

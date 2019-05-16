@@ -117,3 +117,31 @@ a.circle-link {
 .circle-link-hover-txt__space {
   padding-top: 5px;
 }
+
+.button-play {
+  display: inline-block;
+  width: 60px;
+  height: 36px;
+  background-color: $red-light;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.4s ease;
+  &:focus {
+    outline: none;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 22px;
+    border-top: 10px solid transparent;
+    border-left: 20px solid white;
+    border-bottom: 10px solid transparent;
+  }
+  &:hover {
+    transform: translate(-1px, -2px);
+    box-shadow: 1px 3px 3px $black-light;
+  }
+}
