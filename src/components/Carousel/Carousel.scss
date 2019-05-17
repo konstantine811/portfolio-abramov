@@ -41,7 +41,6 @@
     }
     .carousel-img-wrap-blur {
       transform: scale(0.9, 1.1);
-      filter: blur(15px);
       animation: scale-blur 3s 0.4s cubic-bezier(0.08, 1.13, 0.53, 1.01) 1 forwards;
     }
     .slider.slide-1 {
@@ -84,7 +83,6 @@
   .work-portfolio.slideFromDown {
     .carousel-img-wrap-blur {
       transform: scale(0.9, 1.1);
-      filter: blur(15px);
       animation: scale-blur 3s 0.4s cubic-bezier(0.08, 1.13, 0.53, 1.01) 1 forwards;
     }
     .slider.slide-0,
@@ -195,9 +193,8 @@
 
 .slider.slide-3,
 .slider.slide-4.v-move {
-  transition: all 2.3s ease, opacity 1s ease-out, filter 0.2s ease-in;
+  transition: all 2.3s ease, opacity 1s ease-out;
   opacity: 0;
-  filter: blur(5px);
   z-index: -10;
 }
 

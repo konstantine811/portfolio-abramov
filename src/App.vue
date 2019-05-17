@@ -1,7 +1,5 @@
 <template lang="pug">
   #app(:class="statusSectionClass")
-    .app-bgc
-      include ./assets/img/svg/background.svg
     partials-popup-frame(v-if="popup.showPopup")
     partials-popup-menu(v-if="popup.showPopupMenu")
     .app-logo-wrap(@click="showPopupMenu")
@@ -118,27 +116,7 @@ export default {
   background-size: cover;
   position: relative;
   display: flex;
-  @include for-tablet-landscape-down {
-    background-color: $silver-light;
-  }
-}
-
-.app-bgc {
-  position: absolute;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  min-height: 100vh;
-  @include for-tablet-landscape-down {
-    display: none;
-  }
-}
-
-.rect-bgc {
-  width: 100%;
-  height: 100%;
-  animation: scale-bgc 1s ease-in infinite forwards;
+  background-color: $silver-light;
 }
 
 .app-logo-wrap {

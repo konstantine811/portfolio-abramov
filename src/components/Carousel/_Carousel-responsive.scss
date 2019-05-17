@@ -69,7 +69,6 @@
     .carousel-img-wrap-blur {
       @include for-tablet-landscape-down {
         transform: scale(1, 1);
-        filter: blur(0);
         animation: none;
       }
     }
@@ -119,7 +118,6 @@
     .carousel-img-wrap-blur {
       @include for-tablet-landscape-down {
         transform: scale(1, 1);
-        filter: blur(0);
         animation: none;
       }
     }

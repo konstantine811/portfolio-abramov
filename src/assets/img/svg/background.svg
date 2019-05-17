@@ -4,10 +4,6 @@
             <stop offset="0" stop-color="#fff"/>
             <stop offset="1" stop-color="#989898"/>
         </radialGradient>
-        <filter id="noiseEffectBgc" x="0" y="0">
-            <feTurbulence baseFrequency="1" numOctaves="1" result="noise" type="fractalNoise"/>
-        </filter>
     </defs>
     <rect id="Background" fill="url(#radial-gradient)" class="rect-bgc"/>
-    <rect fill="#2B2F3E" class="rect-bgc" filter="url(#noiseEffectBgc)" opacity=".9"/>
 </svg>
