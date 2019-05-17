@@ -16,7 +16,7 @@ export default {
       slides: [
         {
           title: "ADx Healthcare",
-          image: require("@/assets/img/portfolio/adx-project.png"),
+          image: require("@/assets/img/portfolio/adx-project.jpg"),
           url: "https://genetics.adxhealthcare.com",
           description:
             "This project was created to order your dna research. On this project, as a Front-end developer, I used the following technologies: HTML, SCSS, Bootstrap and Angular.js.",
@@ -25,7 +25,7 @@ export default {
         },
         {
           title: "IxLayer",
-          image: require("@/assets/img/portfolio/ixlayer-project.png"),
+          image: require("@/assets/img/portfolio/ixlayer-project.jpg"),
           url: "https://ixlayer.com/",
           description:
             "This is a San Francisco startup project for a complete solution for launching your genetic product. For this project, I used Gulp, HTML(Jade), SCSS and Javascript.",
@@ -33,7 +33,7 @@ export default {
         },
         {
           title: "IxLayer Phone Project",
-          image: require("@/assets/img/portfolio/ixlayer-phone-project.png"),
+          image: require("@/assets/img/portfolio/ixlayer-phone-project.jpg"),
           url: "https://ixlayer-phone.herokuapp.com/",
           description:
             "This is my first isometric practice project, which I drew with the help of Adobe Illustrator and then importing the SVG, I animated it with the help of SCSS and assembled the project on Vue.js.",
@@ -42,7 +42,7 @@ export default {
         },
         {
           title: "GOALZERO",
-          image: require("@/assets/img/portfolio/goalzero.png"),
+          image: require("@/assets/img/portfolio/goalzero.jpg"),
           url: "https://www.goalzero.com/",
           description:
             "The site for the sale of smart portable electrical equipment. Here I, as a Front-end developer, together with the team, took part in the markup and styling of the site with the help of HTML, SCSS and Bootstrap",
@@ -50,7 +50,7 @@ export default {
         },
         {
           title: "ixStore",
-          image: require("@/assets/img/portfolio/ixStore.png"),
+          image: require("@/assets/img/portfolio/ixStore.jpg"),
           description:
             "This is a template project for IxStore. Here, for the first time in practice, I began to use the Vue.js (Vuelidate, I18n, Vuex) as well as HTML and SCSS.",
           frameMovie: "https://www.youtube.com/embed/dfgSBUpxh5Y",
@@ -58,7 +58,7 @@ export default {
         },
         {
           title: "Portfolio",
-          image: require("@/assets/img/portfolio/portfolio-abrams.png"),
+          image: require("@/assets/img/portfolio/portfolio-abrams.jpg"),
           url: "https://abrams-portfolio.herokuapp.com",
           description:
             "This one is my early portfolio. Here I used Angular 4 for the sake of practice.",
@@ -67,7 +67,7 @@ export default {
         },
         {
           title: "ixLayer Admin",
-          image: require("@/assets/img/portfolio/ixLayerAdmin.png"),
+          image: require("@/assets/img/portfolio/ixLayerAdmin.jpg"),
           description:
             "This is the admin panel for ixLayer. We developed this site in a team with another developer. My main task was markup and styling. The technologies I used here are HTML, SCSS, Vue.js and Material Component Framework Vuetify.",
           frameMovie: "https://www.youtube.com/embed/dUZtXm9OwoE",
@@ -75,7 +75,7 @@ export default {
         },
         {
           title: "Agropool",
-          image: require("@/assets/img/portfolio/agropool.png"),
+          image: require("@/assets/img/portfolio/agropool.jpg"),
           url: "https://www.agropool.ch/de/",
           description:
             "Project Agropool on the sale of agricultural machinery (Switzerland). Here I, as a  Front-end developer, used HTML, SCSS, Semantic UI and Javascript. The site also uses two color themes, so when writing styles, an approach was used to change different themes.",
