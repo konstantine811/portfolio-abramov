@@ -1,5 +1,5 @@
-@import "../../assets/styles/common/variables";
-@import "../../assets/styles/mixins/responsive";
+@import '../../assets/styles/common/variables';
+@import '../../assets/styles/mixins/responsive';
 
 .contact-page,
 .contact-page-wrap-box {
@@ -21,7 +21,8 @@
 
 .down .active .contact-page {
   .box-silver {
-    animation: motion-scale-blur 3.5s 0.3s cubic-bezier(0.08, 1.13, 0.53, 1.01) 1 forwards;
+    animation: motion-scale-blur 3.5s 0.3s cubic-bezier(0.08, 1.13, 0.53, 1.01)
+      1 forwards;
   }
   @for $i from 1 through 3 {
     .form-input__wrap:nth-child(#{$i}) {
@@ -61,7 +62,9 @@
 }
 
 .label-form-anim {
+  font-size: 1.5rem;
   display: inline-block;
+  line-height: 0;
 }
 
 .contact-box__title {
@@ -108,7 +111,7 @@
 }
 
 .input-wrap__space {
-  margin-top: 3px;
+  margin-top: 0;
 }
 
 .input-svg-box,
@@ -134,7 +137,9 @@
   position: absolute;
   z-index: 100;
   width: 100%;
-  border: none;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 1.3rem;
   padding: 5px 13px 0;
   transition: box-shadow 0.5s cubic-bezier(0.08, 1.13, 0.53, 1.01);
   &:focus {
@@ -178,4 +183,4 @@
   flex-wrap: wrap;
 }
 
-@import "./Contact-responsive";
+@import './Contact-responsive';

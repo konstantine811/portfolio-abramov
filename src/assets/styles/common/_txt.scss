@@ -22,7 +22,7 @@ h6 {
 }
 
 .large-title {
-  @include font-style("Amiri", 101px, 400);
+  @include font-style('Amiri', 101px, 400);
 }
 
 .title-shadow {
@@ -30,12 +30,12 @@ h6 {
 }
 
 .sub-title {
-  @include font-style("Amiri", 49px, 400, italic);
+  @include font-style('Amiri', 49px, 400, italic);
   color: $black-light;
 }
 
 .txt-large {
-  @include font-style("Amiri", 30px, 400, italic);
+  @include font-style('Amiri', 26px, 400, italic);
   line-height: 35px;
   color: $black-light;
 }
@@ -67,18 +67,18 @@ h6 {
 
 h2.txt-second,
 .txt-second {
-  @include font-style("Amiri", 36px, 400);
+  @include font-style('Amiri', 36px, 400);
   color: $black-light;
 }
 
 .error-txt {
-  @include font-style("Amiri", 26px, 400, italic);
+  @include font-style('Amiri', 26px, 400, italic);
   color: $red-light;
   transition: transform 0.5s ease-in;
 }
 
 .success-txt {
-  @include font-style("Amiri", 26px, 400, italic);
+  @include font-style('Amiri', 26px, 400, italic);
   color: $green-2;
   transition: transform 0.5s ease-in;
 }

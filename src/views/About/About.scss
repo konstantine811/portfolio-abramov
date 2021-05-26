@@ -1,5 +1,5 @@
-@import "../../assets/styles/common/variables";
-@import "../../assets/styles/mixins/responsive";
+@import '../../assets/styles/common/variables';
+@import '../../assets/styles/mixins/responsive';
 
 .about-page {
   height: 100%;
@@ -33,6 +33,12 @@
   }
 }
 
+.svg-image-constantine {
+  opacity: 0;
+  x: 27%;
+  animation: fade-in 4.5s 1s ease 1 forwards;
+}
+
 .down .active .about-page {
   .box-silver {
     animation: motion-scale-blur 3s 0.2s cubic-bezier(0.08, 1.13, 0.53, 1.01) 1
@@ -40,11 +46,6 @@
   }
 
   // svg show
-  .svg-image-constantine {
-    opacity: 0;
-    x: 27%;
-    animation: fade-in 4.5s 1s ease 1 forwards;
-  }
 
   .svg-triangle,
   .svg-triangle-main-constantine,
@@ -180,4 +181,4 @@
 }
 //end animation transition slide
 
-@import "./About-responsive";
+@import './About-responsive';
