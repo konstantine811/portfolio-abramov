@@ -35,14 +35,14 @@
 
 .down .active .about-page {
   .box-silver {
-    animation: motion-scale-blur 3s 0.2s cubic-bezier(0.08, 1.13, 0.53, 1.01) 1 forwards;
+    animation: motion-scale-blur 3s 0.2s cubic-bezier(0.08, 1.13, 0.53, 1.01) 1
+      forwards;
   }
 
   // svg show
   .svg-image-constantine {
-    width: 100%;
-    height: 100%;
     opacity: 0;
+    x: 27%;
     animation: fade-in 4.5s 1s ease 1 forwards;
   }
 
@@ -98,7 +98,8 @@
   .about-slideshow-image {
     transform: translateX(-123%);
     opacity: 0;
-    animation: slide-box-fade 3.5s cubic-bezier(0.08, 1.13, 0.53, 1.01) 1 forwards;
+    animation: slide-box-fade 3.5s cubic-bezier(0.08, 1.13, 0.53, 1.01) 1
+      forwards;
   }
 
   .txt-show-anim {
